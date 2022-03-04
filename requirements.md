@@ -7,7 +7,7 @@
 ## applicaties
 - timer via toetsknoppen
 	- stopwatch
-- rrs feeds
+- rss feeds
 - to-do lijst
 
 ## optioneel
