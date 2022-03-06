@@ -1,0 +1,11 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libteam
+Description: Libteam library.
+Requires: libnl-3.0
+Version: 1.31
+Libs: -L${libdir} -lteam
+Cflags: -I${includedir}

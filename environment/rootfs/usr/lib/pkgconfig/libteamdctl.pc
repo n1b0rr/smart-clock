@@ -1,0 +1,10 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libteamdctl
+Description: Teamd daemon control library.
+Version: 1.31
+Libs: -L${libdir} -lteamdctl
+Cflags: -I${includedir}

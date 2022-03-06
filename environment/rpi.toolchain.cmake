@@ -1,20 +1,25 @@
-SET(CMAKE_SYSTEM_NAME Linux)
-SET(CMAKE_SYSTEM_VERSION 1)
+set(CMAKE_SYSTEM_NAME Linux)
+set(CMAKE_SYSTEM_PROCESSOR arm)
+set(CMAKE_CROSSCOMPILING TRUE)
+set(CMAKE_SYSTEM_VERSION 1)
+set(CMAKE_SYSROOT ${CMAKE_CURRENT_SOURCE_DIR}/environment/rootfs)
+set(tools ${CMAKE_CURRENT_SOURCE_DIR}/environment/gcc-arm-x86_64-arm-none-linux-gnueabihf)
+
 
 # Specify the cross compiler
-SET(CMAKE_C_COMPILER ./gcc-arm-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-gcc)
-SET(CMAKE_CXX_COMPILER ./gcc-arm-x86_64-arm-none-linux-gnueabihf/bin/arm-none-linux-gnueabihf-g++)
+set(CMAKE_C_COMPILER ${tools}/bin/arm-none-linux-gnueabihf-gcc)
+set(CMAKE_CXX_COMPILER ${tools}/bin/arm-none-linux-gnueabihf-g++)
 
 # Where is the target environment
-SET(CMAKE_FIND_ROOT_PATH ./rootfs)
-SET(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --sysroot=${CMAKE_FIND_ROOT_PATH}")
-SET(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} --sysroot=${CMAKE_FIND_ROOT_PATH}")
-SET(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} --sysroot=${CMAKE_FIND_ROOT_PATH}")
+set(CMAKE_FIND_ROOT_PATH ${CMAKE_SYSROOT})
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} --sysroot=${CMAKE_FIND_ROOT_PATH}")
+set(CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} --sysroot=${CMAKE_FIND_ROOT_PATH}")
+set(CMAKE_MODULE_LINKER_FLAGS "${CMAKE_MODULE_LINKER_FLAGS} --sysroot=${CMAKE_FIND_ROOT_PATH}")
 
 # Search for programs only in the build host directories
-SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 
 # Search for libraries and headers only in the target directories
-SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
-SET(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
 

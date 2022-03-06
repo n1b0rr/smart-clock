@@ -1,0 +1,11 @@
+[Trigger]
+Type = File
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Target = usr/lib/modules/5.15.26-2-rpi-ARCH/*
+
+[Action]
+Description = Updating linux-rpi module dependencies...
+When = PostTransaction
+Exec = /usr/bin/depmod 5.15.26-2-rpi-ARCH

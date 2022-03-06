@@ -1,0 +1,13 @@
+prefix=/usr
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+exec_prefix=${prefix}
+vpnservicedir=${prefix}/lib/NetworkManager/VPN
+
+Name: libnm
+Description: Convenience library for clients of NetworkManager
+Version: 1.36.0
+Requires: gio-2.0
+Libs: -L${libdir} -lnm
+Cflags: -I${includedir}/libnm

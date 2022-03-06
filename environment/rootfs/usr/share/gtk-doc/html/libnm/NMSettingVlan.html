@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>NMSettingVlan: libnm Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="libnm Reference Manual">
+<link rel="up" href="ch03.html" title="Connection and Setting API Reference">
+<link rel="prev" href="NMSettingVeth.html" title="NMSettingVeth">
+<link rel="next" href="NMSettingVpn.html" title="NMSettingVpn">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#NMSettingVlan.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#NMSettingVlan.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="NMSettingVeth.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="NMSettingVpn.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="NMSettingVlan"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="NMSettingVlan.top_of_page"></a>NMSettingVlan</span></h2>
+<p>NMSettingVlan</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="NMSettingVlan.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<a class="link" href="NMSetting.html" title="NMSetting"><span class="returnvalue">NMSetting</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-new" title="nm_setting_vlan_new ()">nm_setting_vlan_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-get-parent" title="nm_setting_vlan_get_parent ()">nm_setting_vlan_get_parent</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-get-id" title="nm_setting_vlan_get_id ()">nm_setting_vlan_get_id</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-get-flags" title="nm_setting_vlan_get_flags ()">nm_setting_vlan_get_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-get-num-priorities" title="nm_setting_vlan_get_num_priorities ()">nm_setting_vlan_get_num_priorities</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-get-priority" title="nm_setting_vlan_get_priority ()">nm_setting_vlan_get_priority</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-add-priority" title="nm_setting_vlan_add_priority ()">nm_setting_vlan_add_priority</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-remove-priority" title="nm_setting_vlan_remove_priority ()">nm_setting_vlan_remove_priority</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-remove-priority-by-value" title="nm_setting_vlan_remove_priority_by_value ()">nm_setting_vlan_remove_priority_by_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-remove-priority-str-by-value" title="nm_setting_vlan_remove_priority_str_by_value ()">nm_setting_vlan_remove_priority_str_by_value</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-clear-priorities" title="nm_setting_vlan_clear_priorities ()">nm_setting_vlan_clear_priorities</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="NMSettingVlan.html#nm-setting-vlan-add-priority-str" title="nm_setting_vlan_add_priority_str ()">nm_setting_vlan_add_priority_str</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="NMSettingVlan.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NM-SETTING-VLAN-SETTING-NAME:CAPS" title="NM_SETTING_VLAN_SETTING_NAME">NM_SETTING_VLAN_SETTING_NAME</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NM-SETTING-VLAN-PARENT:CAPS" title="NM_SETTING_VLAN_PARENT">NM_SETTING_VLAN_PARENT</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NM-SETTING-VLAN-ID:CAPS" title="NM_SETTING_VLAN_ID">NM_SETTING_VLAN_ID</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NM-SETTING-VLAN-FLAGS:CAPS" title="NM_SETTING_VLAN_FLAGS">NM_SETTING_VLAN_FLAGS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NM-SETTING-VLAN-INGRESS-PRIORITY-MAP:CAPS" title="NM_SETTING_VLAN_INGRESS_PRIORITY_MAP">NM_SETTING_VLAN_INGRESS_PRIORITY_MAP</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NM-SETTING-VLAN-EGRESS-PRIORITY-MAP:CAPS" title="NM_SETTING_VLAN_EGRESS_PRIORITY_MAP">NM_SETTING_VLAN_EGRESS_PRIORITY_MAP</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap">NMVlanPriorityMap</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NMVlanFlags" title="enum NMVlanFlags">NMVlanFlags</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="NMSettingVlan.html#NM-VLAN-FLAGS-ALL:CAPS" title="NM_VLAN_FLAGS_ALL">NM_VLAN_FLAGS_ALL</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="NMSettingVlan.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> NMVlanPriorityMap
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GFlags</a>
+    <span class="lineart">╰──</span> NMVlanFlags
+</pre>
+</div>
+<div class="refsect1">
+<a name="NMSettingVlan.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="NMSettingVlan.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="nm-setting-vlan-new"></a><h3>nm_setting_vlan_new ()</h3>
+<pre class="programlisting"><a class="link" href="NMSetting.html" title="NMSetting"><span class="returnvalue">NMSetting</span></a> *
+nm_setting_vlan_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-get-parent"></a><h3>nm_setting_vlan_get_parent ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+nm_setting_vlan_get_parent (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-get-id"></a><h3>nm_setting_vlan_get_id ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a>
+nm_setting_vlan_get_id (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-get-flags"></a><h3>nm_setting_vlan_get_flags ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#guint32"><span class="returnvalue">guint32</span></a>
+nm_setting_vlan_get_flags (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-get-num-priorities"></a><h3>nm_setting_vlan_get_num_priorities ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gint32"><span class="returnvalue">gint32</span></a>
+nm_setting_vlan_get_num_priorities (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                                    <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-get-priority"></a><h3>nm_setting_vlan_get_priority ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+nm_setting_vlan_get_priority (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                              <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> idx</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *out_from</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> *out_to</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-add-priority"></a><h3>nm_setting_vlan_add_priority ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+nm_setting_vlan_add_priority (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                              <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> from</code></em>,
+                              <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> to</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-remove-priority"></a><h3>nm_setting_vlan_remove_priority ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+nm_setting_vlan_remove_priority (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                                 <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>,
+                                 <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> idx</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-remove-priority-by-value"></a><h3>nm_setting_vlan_remove_priority_by_value ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+nm_setting_vlan_remove_priority_by_value
+                               (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                                <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> from</code></em>,
+                                <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> to</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-remove-priority-str-by-value"></a><h3>nm_setting_vlan_remove_priority_str_by_value ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+nm_setting_vlan_remove_priority_str_by_value
+                               (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                                <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *str</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-clear-priorities"></a><h3>nm_setting_vlan_clear_priorities ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+nm_setting_vlan_clear_priorities (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                                  <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>);</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="nm-setting-vlan-add-priority-str"></a><h3>nm_setting_vlan_add_priority_str ()</h3>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+nm_setting_vlan_add_priority_str (<em class="parameter"><code><a class="link" href="NMSettingVlan.html" title="NMSettingVlan"><span class="type">NMSettingVlan</span></a> *setting</code></em>,
+                                  <em class="parameter"><code><a class="link" href="NMSettingVlan.html#NMVlanPriorityMap" title="enum NMVlanPriorityMap"><span class="type">NMVlanPriorityMap</span></a> map</code></em>,
+                                  <em class="parameter"><code>const <span class="type">char</span> *str</code></em>);</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="NMSettingVlan.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="NM-SETTING-VLAN-SETTING-NAME:CAPS"></a><h3>NM_SETTING_VLAN_SETTING_NAME</h3>
+<pre class="programlisting">#define NM_SETTING_VLAN_SETTING_NAME "vlan"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-SETTING-VLAN-PARENT:CAPS"></a><h3>NM_SETTING_VLAN_PARENT</h3>
+<pre class="programlisting">#define NM_SETTING_VLAN_PARENT               "parent"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-SETTING-VLAN-ID:CAPS"></a><h3>NM_SETTING_VLAN_ID</h3>
+<pre class="programlisting">#define NM_SETTING_VLAN_ID                   "id"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-SETTING-VLAN-FLAGS:CAPS"></a><h3>NM_SETTING_VLAN_FLAGS</h3>
+<pre class="programlisting">#define NM_SETTING_VLAN_FLAGS                "flags"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-SETTING-VLAN-INGRESS-PRIORITY-MAP:CAPS"></a><h3>NM_SETTING_VLAN_INGRESS_PRIORITY_MAP</h3>
+<pre class="programlisting">#define NM_SETTING_VLAN_INGRESS_PRIORITY_MAP "ingress-priority-map"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-SETTING-VLAN-EGRESS-PRIORITY-MAP:CAPS"></a><h3>NM_SETTING_VLAN_EGRESS_PRIORITY_MAP</h3>
+<pre class="programlisting">#define NM_SETTING_VLAN_EGRESS_PRIORITY_MAP  "egress-priority-map"
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMVlanPriorityMap"></a><h3>enum NMVlanPriorityMap</h3>
+<p>A selector for traffic priority maps; these map Linux SKB priorities
+to 802.1p priorities used in VLANs.</p>
+<div class="refsect3">
+<a name="NMVlanPriorityMap.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="NM-VLAN-INGRESS-MAP:CAPS"></a>NM_VLAN_INGRESS_MAP</p></td>
+<td class="enum_member_description">
+<p>map for incoming data</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="NM-VLAN-EGRESS-MAP:CAPS"></a>NM_VLAN_EGRESS_MAP</p></td>
+<td class="enum_member_description">
+<p>map for outgoing data</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NMVlanFlags"></a><h3>enum NMVlanFlags</h3>
+<p><a class="link" href="NMSettingVlan.html#NMVlanFlags" title="enum NMVlanFlags"><span class="type">NMVlanFlags</span></a> values control the behavior of the VLAN interface.</p>
+<div class="refsect3">
+<a name="NMVlanFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="NM-VLAN-FLAG-REORDER-HEADERS:CAPS"></a>NM_VLAN_FLAG_REORDER_HEADERS</p></td>
+<td class="enum_member_description">
+<p>indicates that this interface should reorder
+outgoing packet headers to look more like a non-VLAN Ethernet interface</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="NM-VLAN-FLAG-GVRP:CAPS"></a>NM_VLAN_FLAG_GVRP</p></td>
+<td class="enum_member_description">
+<p>indicates that this interface should use GVRP to register
+itself with its switch</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="NM-VLAN-FLAG-LOOSE-BINDING:CAPS"></a>NM_VLAN_FLAG_LOOSE_BINDING</p></td>
+<td class="enum_member_description">
+<p>indicates that this interface's operating
+state is tied to the underlying network interface but other details
+(like routing) are not.</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="NM-VLAN-FLAG-MVRP:CAPS"></a>NM_VLAN_FLAG_MVRP</p></td>
+<td class="enum_member_description">
+<p>indicates that this interface should use MVRP to register
+itself with its switch</p>
+</td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="NM-VLAN-FLAGS-ALL:CAPS"></a><h3>NM_VLAN_FLAGS_ALL</h3>
+<pre class="programlisting">#define             NM_VLAN_FLAGS_ALL</pre>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>
