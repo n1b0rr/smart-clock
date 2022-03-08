@@ -29,6 +29,8 @@ class LCD {
 	protected:
 		uint8_t SPI_pin;
 		uint8_t pwm_channel;
+		uint8_t reset_pin;
+		uint8_t A0_pin;
 	
 	private:
 		std::unique_ptr<ClearBehavior> clearBehavior;
