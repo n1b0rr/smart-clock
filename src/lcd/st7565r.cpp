@@ -10,8 +10,8 @@ void ST7565R_Display::init() const {
 	bcm2835_spi_setDataMode(BCM2835_SPI_MODE3);
 
 	//init output ports
-	bcm2835_gpio_fsel(RPI_GPIO_P1_16, BCM2835_GPIO_FSEL_OUTP);	//set pin16 naar output
-	bcm2835_gpio_fsel(reset_pin, BCM2835_GPIO_FSEL_OUTP);	//set pin18 naar output
+	bcm2835_gpio_fsel(A0_pin, BCM2835_GPIO_FSEL_OUTP);
+	bcm2835_gpio_fsel(reset_pin, BCM2835_GPIO_FSEL_OUTP);
 
 	//display reset and disable A0
 	bcm2835_gpio_write(A0_pin, LOW);
