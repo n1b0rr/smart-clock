@@ -17,10 +17,10 @@ class LCD {
 		LCD() = default;
 		
 		void clear() const;
-		void print(std::string) const;
+		void print(const std::string&) const;
 		int set_cursor(int) const;
 		void set_clock(int, int) const;
-		void print_clock_mode(std::string) const;
+		void print_clock_mode(const std::string&) const;
 		virtual void init() const = 0;
 		virtual void brightness(float) const = 0;
 	
@@ -50,7 +50,7 @@ class ClearBehavior {
 
 class PrintBehavior {
 	public:
-		virtual void perform_print(uint8_t, std::string) const = 0;
+		virtual void perform_print(uint8_t, const std::string&) const = 0;
 		
 };
 
@@ -69,7 +69,7 @@ class Set_clockBehavior {
 
 class Print_clock_modeBehavior {
 	public:
-		virtual void perform_print_clock_mode(uint8_t, std::string) const;
+		virtual void perform_print_clock_mode(uint8_t, const std::string&) const;
 };
 
 #endif //LCD_H

@@ -6,7 +6,7 @@ inline void LCD::clear() const {
 
 }
 
-inline void LCD::print(std::string text) const {
+inline void LCD::print(const std::string& text) const {
 
 	printBehavior->perform_print(SPI_pin,text);
 
@@ -24,7 +24,7 @@ inline void LCD::set_clock(int hh, int mm) const {
 
 }
 
-inline void LCD::print_clock_mode(std::string text) const {
+inline void LCD::print_clock_mode(const std::string& text) const {
 
 	print_clock_modeBehavior->perform_print_clock_mode(SPI_pin, text);
 
