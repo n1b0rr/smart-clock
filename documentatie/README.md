@@ -30,7 +30,7 @@ Names: Qinkipa, Robin, Nasser
 		+ stop
 		+ reset
 
--	System functions
+-	System functions (Robin)
 	+	Get time
 	+	Get ip
 	+	Receive_and_process_data_website
