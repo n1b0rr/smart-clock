@@ -20,12 +20,12 @@ Names: Qinkipa, Robin, Nasser
 	- RSS feed
 		+ menu
 		+ poll feed
-	- Timer
+	- Timer (Robin)
 		+ set time
 		+ start timer
 		+ stop timer
 		+ reset timer
-	- Stop Watch
+	- Stop Watch (Robin)
 		+ start
 		+ stop
 		+ reset
