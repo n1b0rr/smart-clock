@@ -17,7 +17,7 @@ Names: Qinkipa, Robin, Nasser
 	- Weather
 		+ menu
 		+ poll weather
-	- RSS feed
+	- RSS feed (Nasser)
 		+ menu
 		+ poll feed
 	- Timer (Robin)
