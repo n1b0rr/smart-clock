@@ -1,18 +1,23 @@
 Names: Qinkipa, Robin, Nasser
 # functions
 
-- Display functions to output data onto the displays (Nasser)
+- Display and alarm functions (Nasser)
 	- 12-hour display function for time
 	- 24-hour display function for time
-	- 12-hour display function for alarm
-	- 24-hour display function for alarm
+	- set alarm AM/PM mode
+	- set alarm 24h mode
+	- disable alarm
+	- enable alarm
+	- check alarm time
+	- set cursor
+	- draw string
+	- clear screen
 	
 - Alarm peripherals (Nasser)
 	- enable display flashing
 	- disable display flashing
 	- enable buzzer
 	- disable buzzer
-
 
 - Interaction functions
 	- Reminders	
