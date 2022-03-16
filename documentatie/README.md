@@ -6,7 +6,12 @@ Names: Qinkipa, Robin, Nasser
 	- 24-hour display function for time
 	- 12-hour display function for alarm
 	- 24-hour display function for alarm
-	- Display flashing routine for the alarm
+	
+- Alarm peripherals (Nasser)
+	- enable display flashing
+	- disable display flashing
+	- enable buzzer
+	- disable buzzer
 
 
 - Interaction functions
