@@ -25,28 +25,28 @@
 ## 2. switch application
 ## 3. system functions
 ### high priority
-	+	Get time
-	+	Check button presses
-		+ debounce
+	-	Get time
+	-	Check button presses
+		- debounce
 ### medium priority
-	+	Get ip
-	+	Receive_and_process_data_website
+	-	Get ip
+	-	Receive_and_process_data_website
 
 
 # medium priority
 ## 4. timer
 ### all same priority
-	+ set time
-	+ start timer
-	+ stop timer
-	+ reset timer
+	- set time
+	- start timer
+	- stop timer
+	- reset timer
 
 
 ## 5. stop-watch
 ### all same priority
-	+ start
-	+ stop
-	+ reset
+	- start
+	- stop
+	- reset
 
 # low priority
 ## rss feeds
