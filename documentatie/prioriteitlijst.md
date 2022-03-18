@@ -16,7 +16,6 @@
 	- draw string
 
 ### low priority
-- Alarm peripherals (Nasser)
 	- enable display flashing
 	- disable display flashing
 	- enable buzzer
