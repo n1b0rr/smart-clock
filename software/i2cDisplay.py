@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFont, GifImagePlugin
 i2c = busio.I2C(SCL,SDA)
 
 disp = adafruit_ssd1306.SSD1306_I2C(128,64,i2c)
-font = ImageFont.load_default()
+font = ImageFont.truetype("fonts/liberation.ttf", size=20)
 
 disp.fill(0)
 disp.show()
@@ -28,8 +28,9 @@ height = disp.height
 image = Image.new("1", (width, height), color=0)
 
 def write(x, y, ctx):
-    draw = ImageDraw.Draw(image)
-    draw.text((x, y), "Hello world", font=font, fill=255)
+    draw = ImageDraw.Draw(image, "1")
+    draw.rectangle((width, height,0,0), fill=(0))
+    draw.text((x, y), ctx, font=font, fill=255)
     disp.image(image)
     disp.show()
 
