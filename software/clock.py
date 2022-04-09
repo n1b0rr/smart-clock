@@ -1,4 +1,7 @@
-from i2cDisplay import * 
+try:
+	from i2cDisplay import *
+except:
+	from spiDisplay import *
 
 from datetime import datetime
 
