@@ -25,32 +25,35 @@ class LCD {
 		virtual void brightness(float) const = 0;
 	
 		virtual ~LCD() = default;
+
 	
 	protected:
 		uint8_t SPI_pin;
 		uint8_t pwm_channel;
 		uint8_t reset_pin;
 		uint8_t A0_pin;
+		mutable int cursor;
 	
-	private:
+
 		std::unique_ptr<ClearBehavior> clearBehavior;
 		std::unique_ptr<PrintBehavior> printBehavior;
 		std::unique_ptr<Set_cursorBehavior> set_cursorBehavior;
 		std::unique_ptr<Set_clockBehavior> set_clockBehavior;
 		std::unique_ptr<Print_clock_modeBehavior> print_clock_modeBehavior;
+		
 
 };
 
 class ClearBehavior {
 
 	public:
-		virtual void perform_clear(uint8_t) const = 0;
+		virtual void perform_clear(uint8_t, uint8_t) const = 0;
 
 };
 
 class PrintBehavior {
 	public:
-		virtual void perform_print(uint8_t, const std::string&) const = 0;
+		virtual int perform_print(uint8_t, uint8_t, int, const std::string&) const = 0;
 		
 };
 
