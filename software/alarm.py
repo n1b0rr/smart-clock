@@ -10,8 +10,6 @@ class Alarm:
 		"""
 		Initialize the pin for the communication with the active buzzer
 		"""
-		GPIO.setwarnings(False)
-		GPIO.setmode(GPIO.BCM)
 		GPIO.setup(self.pin, GPIO.OUT, initial=GPIO.LOW)
 		print("Alarm has been set to pin " + str(self.pin))
 	
