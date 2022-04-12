@@ -10,14 +10,15 @@ class Alarm:
 		"""
 		Initialize the pin for the communication with the active buzzer
 		"""
-	
-		RPIO.setup(self.pin, RPIO.OUT, initial=RPIO.LOW)
+		GPIO.setwarnings(False)
+		GPIO.setmode(GPIO.BCM)
+		GPIO.setup(self.pin, GPIO.OUT, initial=GPIO.LOW)
 		print("Alarm has been set to pin " + str(self.pin))
 	
 	def enable(self):
-		RPIO.output(self.pin, True)
+		GPIO.output(self.pin, True)
 		print("Alarm enabled")
 		
 	def disable(self):
-		RPIO.output(self.pin, False)
+		GPIO.output(self.pin, False)
 		print("Alarm disabled")
