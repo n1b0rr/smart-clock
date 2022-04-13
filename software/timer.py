@@ -10,8 +10,11 @@ except:
 
 buttons = Buttons(12,16,20,21)
 buttons.init()
+alarm = Alarm(26)
+alarm.init()
 timer = 0
 timer_active = False
+alarm_enabled = False
 
 while True:
     status = buttons.poll()
@@ -41,9 +44,13 @@ while True:
     if(timer_active):
         if(timer > 0):
             timer = backup - round(time.time() - start_time)
-        if(timer = 0):
-            alarm.enable()
+        if(timer == 0):
+            if not alarm_enabled:
+                alarm_enabled = True
+                alarm.enable()
     else:
+        alarm_enabled = False
+        
         alarm.disable()
 
     
