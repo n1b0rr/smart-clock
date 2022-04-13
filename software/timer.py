@@ -41,6 +41,11 @@ while True:
     if(timer_active):
         if(timer > 0):
             timer = backup - round(time.time() - start_time)
+        if(timer = 0):
+            alarm.enable()
+    else:
+        alarm.disable()
+
     
 
     hours = int(timer/3600)
