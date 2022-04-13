@@ -1,7 +1,7 @@
-try:    
-    from i2cDisplay import * 
+try:
+	from i2cDisplay import *
 except:
-    from spiDisplay import *
+	from spiDisplay import *
 
 import time
 
