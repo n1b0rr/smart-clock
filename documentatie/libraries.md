@@ -1,14 +1,14 @@
 # IDE
 	- vim
-	- kladblok
+	- gedit
 
-# compiler 
-	- arm-none-linux-gnueabihf-gcc
-	- arm-none-linux-gnueabihf-g++
+# interpreter 
+	- python 3.x
 # tools
 	- wsl
 	- linux
 	- cmake
+	- ssh
 # libraries
 	- bcm2835-1.71 (spi, I/O)
 	- pugixml-1.12 (parsing of xml)

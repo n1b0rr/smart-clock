@@ -1,8 +1,10 @@
-from i2cDisplay import * 
+try:    
+    from i2cDisplay import * 
+except:
+    from spiDisplay import *
 
 import time
 
-from datetime import datetime
 
 start = time.time()
 while True:

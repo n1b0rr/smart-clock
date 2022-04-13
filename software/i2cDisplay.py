@@ -1,3 +1,4 @@
+
 import os
 
 # libraries for oled display
@@ -7,9 +8,6 @@ import adafruit_ssd1306
 
 # library for making images, to display
 from PIL import Image, ImageDraw, ImageFont, GifImagePlugin
-
-# neccesary for global variables
-
 
 
 i2c = busio.I2C(SCL,SDA)
@@ -28,6 +26,8 @@ height = disp.height
 image = Image.new("1", (width, height), color=0)
 
 def write(x, y, ctx):
+    
+    
     draw = ImageDraw.Draw(image, "1")
     draw.rectangle((width, height,0,0), fill=(0))
     draw.text((x, y), ctx, font=font, fill=255)
