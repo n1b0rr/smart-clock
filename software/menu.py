@@ -1,3 +1,8 @@
+try:
+	from i2cDisplay import *
+except:
+	from spiDisplay import *
+
 class Menu:
 
     def __init__(self, max_lines):
@@ -57,15 +62,20 @@ class Menu:
         #TODO: change print() function to the
         
         last_draw = self.__start_draw_from + self.__max_lines
+        it = 0
         
         if(last_draw > len(self.__functions)):
             last_draw = len(self.__functions)
         
         for menu_text in range(self.__start_draw_from,last_draw):
             if(menu_text == self.__current_position):
-                print(list(self.__functions.keys())[menu_text] + "<--")
+                write_buffer(0,it,list(self.__functions.keys())[menu_text] + "<--")
+                it += 1
             else:
-                print(list(self.__functions.keys())[menu_text])
+                write_buffer(0,it,list(self.__functions.keys())[menu_text])
+                it += 1
+        
+        send_buffer()
         
 
     def execute_selection(self):
