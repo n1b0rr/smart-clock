@@ -34,3 +34,4 @@ def write(x, y, ctx):
     disp.image(image)
     disp.show()
 
+#Make write_buffer() and send_buffer()

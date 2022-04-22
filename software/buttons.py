@@ -25,7 +25,7 @@ class Buttons:
 		"""
 		
 		#debouncig delay
-		time.sleep(0.001)	#sleep for 1ms
+		time.sleep(0.0005)	#sleep for 0.5ms
 		
 		#poll buttons
 		button_state = {}
