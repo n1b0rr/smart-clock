@@ -13,9 +13,10 @@ def spiDisplayInit():
 	glcd.init()
 	glcd.send_command([0x60]) #PATCH for smart-clock ST7565R display
 	glcd.set_contrast(0)
+	glcd.clear_back_buffer()
 
 #define neato font
-neato = font.XglcdFont('/home/pi/Pi-ST7565/fonts/Neato5x7.c', 5, 7)
+neato = font.XglcdFont('/home/pi/Pi-ST7565/fonts/FixedFont5x8.c', 5, 8)
 
 #create lcd object
 glcd = st7565.Glcd(rgb=[21, 20, 16])
@@ -32,4 +33,16 @@ def write(x, y, ctx):
 	glcd.flip()
 	
 	
+def write_buffer(x, y, ctx):
 
+	"""
+	Write text to buffer at coordinate (x,y)
+	"""
+	glcd.draw_string(ctx, neato, x,y*8)
+	
+def send_buffer():
+	"""
+	Sends the buffer to the display and after that, the buffer will be cleared
+	"""
+	glcd.flip()
+	glcd.clear_back_buffer()

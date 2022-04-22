@@ -29,11 +29,11 @@ alarm.disable()
 
 while True:
 	status = buttons.poll()
-	write(0, 0, "up: " + str(status["UP"]))
-	#write(0, 1, "down: " + str(status["DOWN"]))
-	#write(0, 2, "Button left: " + str(status["LEFT"]))
-	#write(0, 3, "Button right: " + str(status["RIGHT"]))
-	
-	#TODO: FIX write() bug (Every write() call will clear the whole display, which makes writing to multiple lines impossible)
+	write_buffer(0, 0, "Button up: " + str(status["UP"]))
+	write_buffer(0, 1, "Button down: " + str(status["DOWN"]))
+	write_buffer(0, 2, "Button left: " + str(status["LEFT"]))
+	write_buffer(0, 3, "Button right: " + str(status["RIGHT"]))
+	send_buffer()
+
 	
 	
