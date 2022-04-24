@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont, GifImagePlugin
 i2c = busio.I2C(SCL,SDA)
 
 disp = adafruit_ssd1306.SSD1306_I2C(128,64,i2c)
-font = ImageFont.truetype("fonts/liberation.ttf", size=20)
+font = ImageFont.truetype("fonts/liberation.ttf", size=12)
 
 disp.fill(0)
 disp.show()
@@ -35,3 +35,18 @@ def write(x, y, ctx):
     disp.show()
 
 #Make write_buffer() and send_buffer()
+def write_buffer(x, y, ctx):
+    try:
+        draw.text((x,y*12), ctx, font=font, fill=255)
+    except:
+        draw = ImageDraw.Draw(image, "1")
+        draw.text((x,y*12), ctx, font=font, fill=255)
+#def write_buffer(x, y, ctx): 
+#    draw = ImageDraw.Draw(image, "1")
+#    draw.text((x,y*12), ctx, font=font, fill=255)
+
+def send_buffer():
+    disp.image(image)
+    disp.show()
+
+
