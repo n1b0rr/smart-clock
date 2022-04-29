@@ -7,6 +7,7 @@ from alarm import Alarm
 from buttons import Buttons
 from menu import Menu
 from clock import clock
+import time
 from threading import Thread, Event
 
 """
@@ -27,6 +28,8 @@ menu = None
 
 def main():
     global buttons
+    global menu
+    
     button_state = None
     
     init()
@@ -35,8 +38,8 @@ def main():
         clock()
         button_state = buttons.poll()
         if(button_state["UP"] or button_state["DOWN"] or button_state["LEFT"] or button_state["RIGHT"]):
-            #call menu
-            pass
+            buttons.wait_released()
+            menu_function(menu)
 
     
 
@@ -70,8 +73,50 @@ def init():
     menu.add_function("Timer", None)
     menu.add_function("Stopwatch", None)
     menu.add_function("To do", None)
-    menu.add_function("Return", None)
 
+def menu_function(menu_object, timeout = 5):
+    """
+    Show the menu.
+    If no buttons are pressed within the timeout, the function will return
+    
+    timeout variable is in seconds
+    
+    Returns
+    -------
+    None.
+
+    """
+    global buttons
+    start_time = time.time()
+    stop_time = None
+    
+    while True:
+        menu_object.update_screen()
+        button_state = buttons.poll()
+        
+        if(button_state["UP"]):
+            menu_object.up()
+            buttons.wait_released()
+            start_time = time.time()
+        
+        elif(button_state["DOWN"]):
+            menu_object.down()
+            buttons.wait_released()
+            start_time = time.time()
+            
+        elif(button_state["RIGHT"]):
+            buttons.wait_released()
+            menu_object.execute_selection()
+            break
+            
+        elif(button_state["LEFT"]):
+            buttons.wait_released()
+            break
+        else:
+            stop_time = time.time()
+            if((stop_time - start_time) >= timeout):
+                break
+        
 def entry():
     try:
             while True:
@@ -86,6 +131,6 @@ def entry():
 
 
 if __name__ == "__main__":
-    entry()
+    main()
 
         
