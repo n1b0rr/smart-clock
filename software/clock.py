@@ -5,8 +5,17 @@ except:
 
 from datetime import datetime
 
-while True:
+def clock():
+    """
+    Print time to display
+
+    Returns
+    -------
+    None.
+
+    """
+    
     now = datetime.now()
     time = now.strftime("%H:%M:%S")
-    write(20, 20, time)
+    write(7, 2, time)
 

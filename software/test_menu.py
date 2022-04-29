@@ -56,7 +56,7 @@ def bar3():
     print("bar3")
 
 
-menu = Menu(8)  #8 --> zal acht lijnen tekenen
+menu = Menu(5)  #8 --> zal acht lijnen tekenen
 menu.add_function("Display clock", clock)
 menu.add_function("Display time", time)
 menu.add_function("foo", foo)

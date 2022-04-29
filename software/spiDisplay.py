@@ -29,7 +29,7 @@ def write(x, y, ctx):
 	Write text to coordinate (x,y)
 	"""
 	glcd.clear_back_buffer()
-	glcd.draw_string(ctx, neato, x,y)
+	glcd.draw_string(ctx, neato, x*6,y*8)
 	glcd.flip()
 	
 	
@@ -38,7 +38,7 @@ def write_buffer(x, y, ctx):
 	"""
 	Write text to buffer at coordinate (x,y)
 	"""
-	glcd.draw_string(ctx, neato, x,y*8)
+	glcd.draw_string(ctx, neato, x*6,y*8)
 	
 def send_buffer():
 	"""
