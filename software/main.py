@@ -26,6 +26,7 @@ menu = None
 ####################
 
 def main():
+    global buttons
     button_state = None
     
     init()
@@ -49,6 +50,15 @@ def init():
     None.
 
     """
+    
+    global alarm_pin
+    global button_up_pin
+    global button_down_pin
+    global button_left_pin
+    global button_right_pin
+    global alarm
+    global buttons
+    global menu
     
     buttons = Buttons(button_up_pin, button_down_pin, button_left_pin, button_right_pin)
     buttons.init()
