@@ -9,6 +9,7 @@ from menu import Menu
 from clock import clock
 import time
 from threading import Thread, Event
+import RPi.GPIO as GPIO
 
 """
 GLOBAL VARIABLES
@@ -73,6 +74,9 @@ def init():
     menu.add_function("Timer", None)
     menu.add_function("Stopwatch", None)
     menu.add_function("To do", None)
+    
+    GPIO.setwarnings(False)
+    GPIO.setmode(GPIO.BCM)
 
 def menu_function(menu_object, timeout = 5):
     """
