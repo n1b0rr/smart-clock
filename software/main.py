@@ -11,7 +11,7 @@ import time
 import threading
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request
-
+import subprocess
 
 """
 GLOBAL VARIABLES
@@ -66,12 +66,7 @@ def init():
     global alarm
     global buttons
     global menu
-    ipaddress = "192.168.1.20"
     
-    #TODO
-    """
-    Er moet een functie komen die de huidige ipaddress polled
-    """
     
     buttons = Buttons(button_up_pin, button_down_pin, button_left_pin, button_right_pin)
     buttons.init()
@@ -88,8 +83,7 @@ def init():
     GPIO.setmode(GPIO.BCM)
 
     "Setup webserver"
-    #ipaddress = getIpaddress()
-    threading.Thread(target=lambda: app.run(host=ipaddress, port=80, debug=True, use_reloader=False)).start()
+    threading.Thread(target=lambda: app.run(host=get_ip(), port=80, debug=True, use_reloader=False)).start()
 
 def menu_function(menu_object, timeout = 5):
     """
@@ -134,6 +128,21 @@ def menu_function(menu_object, timeout = 5):
             if((stop_time - start_time) >= timeout):
                 break
         
+def get_ip():
+    """
+    Get current IP address of Smart Clock
+
+    Returns
+    -------
+    IP address as string variable
+
+    """
+    temp = str(subprocess.check_output("hostname -I | cut -d' ' -f1", shell=True))
+    temp = temp.strip('b')
+    temp = temp.strip('\\n\'')
+    return temp
+
+
 @app.route('/')
 def index():
     """
@@ -170,15 +179,17 @@ def send():
     Succeed page on good data, else an error page on bad data
 
     """
+    global to_do_list
     data = request.form["to_do_list"]
-    
-    #assert if data is dictionary
-    
-    #data == dictionary ? set new to_do_list variable, return succeed page : return error page
-    
     print("POST request handeling: " + data)
     
-    return "Data ontvangen\n"
+    
+    try:
+        assert type(data) == dict, "to_do_list variable must be a dictionary!"
+        to_do_list = data
+        return "GOOD"
+    except:
+        return "BAD"
     
         
 def entry():
