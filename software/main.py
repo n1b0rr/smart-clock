@@ -8,8 +8,10 @@ from buttons import Buttons
 from menu import Menu
 from clock import clock
 import time
-from threading import Thread, Event
+import threading
 import RPi.GPIO as GPIO
+from flask import Flask, render_template
+
 
 """
 GLOBAL VARIABLES
@@ -24,6 +26,7 @@ button_right_pin = 16
 alarm = None
 buttons = None
 menu = None
+app = Flask(__name__)
 
 ####################
 
@@ -63,6 +66,12 @@ def init():
     global alarm
     global buttons
     global menu
+    ipaddress = "192.168.1.20"
+    
+    #TODO
+    """
+    Er moet een functie komen die de huidige ipaddress polled
+    """
     
     buttons = Buttons(button_up_pin, button_down_pin, button_left_pin, button_right_pin)
     buttons.init()
@@ -77,6 +86,10 @@ def init():
     
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
+
+    "Setup webserver"
+    #ipaddress = getIpaddress()
+    threading.Thread(target=lambda: app.run(host=ipaddress, port=80, debug=True, use_reloader=False)).start()
 
 def menu_function(menu_object, timeout = 5):
     """
@@ -120,6 +133,13 @@ def menu_function(menu_object, timeout = 5):
             stop_time = time.time()
             if((stop_time - start_time) >= timeout):
                 break
+        
+@app.route('/')
+
+def index():
+    return render_template("index.html")
+
+        
         
 def entry():
     try:
