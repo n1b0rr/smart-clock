@@ -154,7 +154,7 @@ def index():
 
     """
     
-    return render_template("index.html")
+    return render_template("index.html", ip=get_ip())
 
 @app.route('/receive', methods=['GET'])
 def receive():
