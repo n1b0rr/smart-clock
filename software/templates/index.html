@@ -9,15 +9,37 @@
 	<style>
 		html{
 			font-family: sans-serif;
+			background-color: #0D0D0D;
+			color: #F2F2F2;
+		}
+		.wrapper{
+			margin: 2em;
+			position: fixed;
+			width: 100%;
+			text-align: center;
 		}
 		#list{
-			width: 150px;
+			width: 300px;
 			margin-top: 10px;
 			margin-bottom: 10px;
-			background-color: rgba(0, 255, 255, 0.63);
+			background-color: #F2F2F2;
+			font-size: 17px;
 		}
-		#list option{
-			margin: 2px;
+		.button{
+			background: #8979F2;
+			border-color: #8979F2;
+			border-style: solid;
+			font-weight: 600;
+		}
+		.button:hover{
+			background: #35F29A;
+		}
+
+		label{
+			font-weight: 600;
+		}
+		h1, label{
+			color: #35F29A;
 		}
 	</style>
 
@@ -45,15 +67,17 @@
 	</script>
 	</head>
 	<body onLoad="init()">
-		<h1>To Do list</h1>
-		<form id="form" action="192.168.0.249" method="POST">
-			<label for="input">Add entry: </label>
-			<input type="text" id="input"/>
-			<input type="button" id="submit" value="ADD"/>
-			<br />
-			<select id="list" size="10"></select>
-			<br />
-			<input name="to_do_list" type="submit" value="send to smart clock" />
-		</form>
+		<div class="wrapper">
+			<h1>To Do list</h1>
+			<form id="form" action="192.168.0.249" method="POST">
+				<label for="input">Add entry: </label>
+				<input type="text" id="input"/>
+				<input type="button" id="submit" value="ADD" class="button"/>
+				<br />
+				<select id="list" size="10"></select>
+				<br />
+				<input name="to_do_list" type="submit" value="send to smart clock"  class="button"/>
+			</form>
+		</div>
 	</body>
 </html>
