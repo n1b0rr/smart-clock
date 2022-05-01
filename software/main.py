@@ -10,7 +10,7 @@ from clock import clock
 import time
 import threading
 import RPi.GPIO as GPIO
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 
 """
@@ -27,7 +27,7 @@ alarm = None
 buttons = None
 menu = None
 app = Flask(__name__)
-
+to_do_list = {0:"Sporten", 1:"Eten", 2:"Slapen", 3:"Gamen"}
 ####################
 
 def main():
@@ -135,11 +135,51 @@ def menu_function(menu_object, timeout = 5):
                 break
         
 @app.route('/')
-
 def index():
+    """
+    Render HTML webpage
+
+    Returns
+    -------
+    HTML code
+
+    """
+    
     return render_template("index.html")
 
-        
+@app.route('/receive', methods=['GET'])
+def receive():
+    """
+    Handle GET request for receive
+
+    Returns
+    -------
+    To do list in JSON format 
+
+    """
+    global to_do_list
+    return to_do_list
+    
+@app.route('/send', methods=['POST'])
+def send():
+    """
+    To do list data from the website will be saved to the Smart Clock
+
+    Returns
+    -------
+    Succeed page on good data, else an error page on bad data
+
+    """
+    data = request.form["to_do_list"]
+    
+    #assert if data is dictionary
+    
+    #data == dictionary ? set new to_do_list variable, return succeed page : return error page
+    
+    print("POST request handeling: " + data)
+    
+    return "Data ontvangen\n"
+    
         
 def entry():
     try:
