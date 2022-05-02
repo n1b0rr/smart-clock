@@ -66,7 +66,7 @@ def init():
     global alarm
     global buttons
     global menu
-    ipaddress = "192.168.1.20"
+    ipaddress = "192.168.0.249"
     
     #TODO
     """

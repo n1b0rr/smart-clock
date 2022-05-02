@@ -24,6 +24,7 @@ height = disp.height
 # make an empty image on which you can write things on,
 #this image will be displayed at a continious rate per second
 image = Image.new("1", (width, height), color=0)
+clear = Image.new("1", (width, height), color=0)
 
 def write(x, y, ctx):
     
@@ -37,10 +38,10 @@ def write(x, y, ctx):
 #Make write_buffer() and send_buffer()
 def write_buffer(x, y, ctx):
     try:
-        draw.text((x,y*12), ctx, font=font, fill=255)
+        draw.text((x*6,y*12), ctx, font=font, fill=255)
     except:
         draw = ImageDraw.Draw(image, "1")
-        draw.text((x,y*12), ctx, font=font, fill=255)
+        draw.text((x*6,y*12), ctx, font=font, fill=255)
 #def write_buffer(x, y, ctx): 
 #    draw = ImageDraw.Draw(image, "1")
 #    draw.text((x,y*12), ctx, font=font, fill=255)
@@ -48,5 +49,7 @@ def write_buffer(x, y, ctx):
 def send_buffer():
     disp.image(image)
     disp.show()
+    draw = ImageDraw.Draw(image, "1")
+    draw.rectangle((width, height,0,0), fill=(0))
 
 
