@@ -112,12 +112,50 @@
 			
 		}
 		
+		function send_data()
+		{	
+			var page = null;
+			var data = get_data();
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.open("POST", "http://{{ ip }}/send", true);
+			
+			
+			xmlhttp.setRequestHeader('Content-Type', 'application/json;charset=utf-8');
+			
+			xmlhttp.onreadystatechange = function () 
+			{ //Call a function when the state changes.
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+				{
+					page = xmlhttp.responseText;               
+				}
+			};
+			
+			
+			xmlhttp.send(JSON.stringify(data)); 
+			
+			return false;
+
+		}
+		
+		function get_data()
+		{
+			var json = new Array;
+			
+			for(var it = 0; it < output.length; ++it)
+			{
+				var temp = output[it];
+				json.push(temp.value);	
+			}
+			
+			return json;
+		}
+		
 	</script>
 	</head>
 	<body onLoad="init()">
 		<div class="wrapper">
 			<h1>To Do list</h1>
-			<form id="form" action="http://{{ ip }}/send" method="POST">
+			<form id="form" action="#" method="get" onsubmit="return send_data()">
 				<label for="input">Add entry: </label>
 				<input type="text" id="input"/>
 				<input type="button" id="submit" value="ADD" class="button"/>

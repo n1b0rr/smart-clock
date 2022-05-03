@@ -180,8 +180,10 @@ def send():
 
     """
     global to_do_list
-    data = request.form["to_do_list"]
-    print("POST request handeling: " + data)
+    data = request.get_json()
+    
+    for x in data:
+        print("POST request handeling: " + x)
     
     
     try:
