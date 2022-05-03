@@ -47,7 +47,7 @@
 
 		var button;
 		var input;
-		var list;
+		var output;
 
 		function init(){
 
@@ -57,9 +57,7 @@
 			button.onclick = add;
 			output.ondblclick = remove;
 			
-			download_data(list);
-			
-			render_list(list);
+			download_data();
 			
 		}
 		function add() {
@@ -70,9 +68,10 @@
 			output.options[this.selectedIndex] = null;
 		}
 		
-		function download_data(object)
+		function download_data()
 		{
 			let xhr= new XMLHttpRequest();
+			var object;
 
 			xhr.responseType='';
 			xhr.onreadystatechange=()=>{
@@ -80,6 +79,7 @@
 				if(xhr.status==200 && xhr.readyState==4)
 				{
 					object = JSON.parse(xhr.responseText);
+					render_list(object);
 					
 				}
 
@@ -91,9 +91,25 @@
 			xhr.send();
 		}
 		
-		function render_list(list)
+		function render_list(object)
 		{
-			//the select tags will get the list data from raspberry pi
+			//object is an JSON object
+		
+			var temp;
+			
+			//convert JSON to ARRAY
+			var arr = Object.values(object);
+			
+			for(var it in arr)
+			{
+				temp = document.createElement("option");
+				temp.value = arr[it];
+				temp.innerHTML = arr[it];
+				output.appendChild(temp);
+			}
+			
+			
+			
 		}
 		
 	</script>
