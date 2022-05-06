@@ -79,6 +79,7 @@ def init():
     menu.add_function("Timer", None)
     menu.add_function("Stopwatch", None)
     menu.add_function("To do", None)
+    menu.add_function("show ip", None)
     
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
