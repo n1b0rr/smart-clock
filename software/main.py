@@ -12,6 +12,7 @@ import threading
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request
 import subprocess
+import pickle
 
 """
 GLOBAL VARIABLES

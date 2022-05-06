@@ -15,4 +15,15 @@
 	- linux default libraries
 	- Pillow (python library for making/altering images)
 	- adafruit_ssd1306 (python library to use mini oled display using i2c)
+	- pickle (for saving and reading files)
+	- flask (webserver)
+	- time
+	- os
+	- subprocessing
+	- threading
+	- rpi gpio
+	- st7565 (display spi)
+	- busio (display i2c)
+	- board SCL SDA (display i2c)
+
 

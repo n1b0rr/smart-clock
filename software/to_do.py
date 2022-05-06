@@ -74,9 +74,6 @@ def init():
     
 
     x = 0
- 
-    with open('todolist.bin', 'wb') as f:
-        pickle.dump(to_do_list, f) 
 
 
     with open('todolist.bin', 'rb') as f:

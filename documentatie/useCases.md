@@ -8,7 +8,7 @@
 - vervolgens druk op de knop "klok instellen"
 - stel de klok in
 
-## rss feeds instellen
+## rss feeds instellen (for version 2.0)
 - navigeer via de toetsknoppen, bij de klok, naar het scherm dat het ip-adres van de klok bevat
 - open een browser en voer het ip-adres in het adresbalk in
 - vervolgends druk op de knop "nieuws-feeds"

@@ -14,16 +14,16 @@
 ## applicaties
 - timer (via toetsknoppen)
 - stopwatch
-- rss feeds
+- rss feeds (for version 2.0)
 	- nieuws en weer
 - to-do lijst
 
 ## instellingen in browser
-- feed toevoegen of verwijderen
+- feed toevoegen of verwijderen (for version 2.0)
 - to-do list aanpassen
 
 ## optioneel
-- mail
-- google kalender
+- mail (for version 2.0)
+- google kalender (for version 2.0)
 
 
