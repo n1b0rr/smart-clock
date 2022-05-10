@@ -1,0 +1,112 @@
+\hypertarget{namespacei2cDisplay}{}\doxysection{i2c\+Display Namespace Reference}
+\label{namespacei2cDisplay}\index{i2cDisplay@{i2cDisplay}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacei2cDisplay_a3c2d15366318efeb41ee597a641a0d97}{send\+\_\+buffer}} ()
+\item 
+def \mbox{\hyperlink{namespacei2cDisplay_abcbffaec95061ceb4fac7cafbc374b52}{write}} (x, y, ctx)
+\item 
+def \mbox{\hyperlink{namespacei2cDisplay_a50fbee47a878a8ac4f972da8a004fdd8}{write\+\_\+buffer}} (x, y, ctx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacei2cDisplay_aebfdce4f6cc7241ba38924f77a12e7cf}{clear}} = Image.\+new(\char`\"{}1\char`\"{}, (\mbox{\hyperlink{namespacei2cDisplay_a5558ace5433f9aabbf0a0ec059900d94}{width}}, \mbox{\hyperlink{namespacei2cDisplay_a509290c21d570ff479c1b9d9b1fe8810}{height}}), color=0)
+\item 
+\mbox{\hyperlink{namespacei2cDisplay_a4e72583d972515f4f5e30d98ce1eb739}{disp}} = adafruit\+\_\+ssd1306.\+SSD1306\+\_\+\+I2C(128,64,\mbox{\hyperlink{namespacei2cDisplay_abd67b7f7b895bcca6ddd4e477f343052}{i2c}})
+\item 
+\mbox{\hyperlink{namespacei2cDisplay_af18bb9025627467c42857f6b57902a47}{font}} = Image\+Font.\+truetype(\char`\"{}fonts/liberation.\+ttf\char`\"{}, size=12)
+\item 
+\mbox{\hyperlink{namespacei2cDisplay_a509290c21d570ff479c1b9d9b1fe8810}{height}} = disp.\+height
+\item 
+\mbox{\hyperlink{namespacei2cDisplay_abd67b7f7b895bcca6ddd4e477f343052}{i2c}} = busio.\+I2C(SCL,SDA)
+\item 
+\mbox{\hyperlink{namespacei2cDisplay_a42cb5f5737262947250c709931232c69}{image}} = Image.\+new(\char`\"{}1\char`\"{}, (\mbox{\hyperlink{namespacei2cDisplay_a5558ace5433f9aabbf0a0ec059900d94}{width}}, \mbox{\hyperlink{namespacei2cDisplay_a509290c21d570ff479c1b9d9b1fe8810}{height}}), color=0)
+\item 
+\mbox{\hyperlink{namespacei2cDisplay_a5558ace5433f9aabbf0a0ec059900d94}{width}} = disp.\+width
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacei2cDisplay_a3c2d15366318efeb41ee597a641a0d97}\label{namespacei2cDisplay_a3c2d15366318efeb41ee597a641a0d97}} 
+\index{i2cDisplay@{i2cDisplay}!send\_buffer@{send\_buffer}}
+\index{send\_buffer@{send\_buffer}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{send\_buffer()}{send\_buffer()}}
+{\footnotesize\ttfamily def i2c\+Display.\+send\+\_\+buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send buffer to display.
+
+Returns
+-------
+None.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacei2cDisplay_abcbffaec95061ceb4fac7cafbc374b52}\label{namespacei2cDisplay_abcbffaec95061ceb4fac7cafbc374b52}} 
+\index{i2cDisplay@{i2cDisplay}!write@{write}}
+\index{write@{write}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def i2c\+Display.\+write (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{ctx }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write to the display directly.
+
+Returns
+-------
+None.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacei2cDisplay_a50fbee47a878a8ac4f972da8a004fdd8}\label{namespacei2cDisplay_a50fbee47a878a8ac4f972da8a004fdd8}} 
+\index{i2cDisplay@{i2cDisplay}!write\_buffer@{write\_buffer}}
+\index{write\_buffer@{write\_buffer}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{write\_buffer()}{write\_buffer()}}
+{\footnotesize\ttfamily def i2c\+Display.\+write\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{y,  }\item[{}]{ctx }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write things to a buffer to send it to the display after. 
+
+Returns
+-------
+None.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacei2cDisplay_aebfdce4f6cc7241ba38924f77a12e7cf}\label{namespacei2cDisplay_aebfdce4f6cc7241ba38924f77a12e7cf}} 
+\index{i2cDisplay@{i2cDisplay}!clear@{clear}}
+\index{clear@{clear}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{clear}{clear}}
+{\footnotesize\ttfamily clear = Image.\+new(\char`\"{}1\char`\"{}, (\mbox{\hyperlink{namespacei2cDisplay_a5558ace5433f9aabbf0a0ec059900d94}{width}}, \mbox{\hyperlink{namespacei2cDisplay_a509290c21d570ff479c1b9d9b1fe8810}{height}}), color=0)}
+
+\mbox{\Hypertarget{namespacei2cDisplay_a4e72583d972515f4f5e30d98ce1eb739}\label{namespacei2cDisplay_a4e72583d972515f4f5e30d98ce1eb739}} 
+\index{i2cDisplay@{i2cDisplay}!disp@{disp}}
+\index{disp@{disp}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{disp}{disp}}
+{\footnotesize\ttfamily disp = adafruit\+\_\+ssd1306.\+SSD1306\+\_\+\+I2C(128,64,\mbox{\hyperlink{namespacei2cDisplay_abd67b7f7b895bcca6ddd4e477f343052}{i2c}})}
+
+\mbox{\Hypertarget{namespacei2cDisplay_af18bb9025627467c42857f6b57902a47}\label{namespacei2cDisplay_af18bb9025627467c42857f6b57902a47}} 
+\index{i2cDisplay@{i2cDisplay}!font@{font}}
+\index{font@{font}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily font = Image\+Font.\+truetype(\char`\"{}fonts/liberation.\+ttf\char`\"{}, size=12)}
+
+\mbox{\Hypertarget{namespacei2cDisplay_a509290c21d570ff479c1b9d9b1fe8810}\label{namespacei2cDisplay_a509290c21d570ff479c1b9d9b1fe8810}} 
+\index{i2cDisplay@{i2cDisplay}!height@{height}}
+\index{height@{height}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily height = disp.\+height}
+
+\mbox{\Hypertarget{namespacei2cDisplay_abd67b7f7b895bcca6ddd4e477f343052}\label{namespacei2cDisplay_abd67b7f7b895bcca6ddd4e477f343052}} 
+\index{i2cDisplay@{i2cDisplay}!i2c@{i2c}}
+\index{i2c@{i2c}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{i2c}{i2c}}
+{\footnotesize\ttfamily i2c = busio.\+I2C(SCL,SDA)}
+
+\mbox{\Hypertarget{namespacei2cDisplay_a42cb5f5737262947250c709931232c69}\label{namespacei2cDisplay_a42cb5f5737262947250c709931232c69}} 
+\index{i2cDisplay@{i2cDisplay}!image@{image}}
+\index{image@{image}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily image = Image.\+new(\char`\"{}1\char`\"{}, (\mbox{\hyperlink{namespacei2cDisplay_a5558ace5433f9aabbf0a0ec059900d94}{width}}, \mbox{\hyperlink{namespacei2cDisplay_a509290c21d570ff479c1b9d9b1fe8810}{height}}), color=0)}
+
+\mbox{\Hypertarget{namespacei2cDisplay_a5558ace5433f9aabbf0a0ec059900d94}\label{namespacei2cDisplay_a5558ace5433f9aabbf0a0ec059900d94}} 
+\index{i2cDisplay@{i2cDisplay}!width@{width}}
+\index{width@{width}!i2cDisplay@{i2cDisplay}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily width = disp.\+width}
+

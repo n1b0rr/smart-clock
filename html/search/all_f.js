@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['save_5fbitmap_123',['save_bitmap',['../classst7565_1_1Glcd.html#ad17ab3cf51b12bcfd52191f2c3c98b39',1,'st7565::Glcd']]],
+  ['seconds_124',['seconds',['../namespacetimer.html#a50a97477ff59a28b3dd9315b21e66a23',1,'timer.seconds()'],['../namespacestopwatch.html#a50a97477ff59a28b3dd9315b21e66a23',1,'stopwatch.seconds()']]],
+  ['send_125',['send',['../namespacemain.html#a80b6c45e40615a79f438161da2f52828',1,'main']]],
+  ['send_5fbuffer_126',['send_buffer',['../namespacespiDisplay.html#adc6d91a6d76a06a883881e821e912a17',1,'spiDisplay.send_buffer()'],['../namespacei2cDisplay.html#a3c2d15366318efeb41ee597a641a0d97',1,'i2cDisplay.send_buffer()']]],
+  ['send_5fcommand_127',['send_command',['../classst7565_1_1Glcd.html#af66126c7e06108bf0a1ebea41ac4ed1d',1,'st7565::Glcd']]],
+  ['send_5fdata_128',['send_data',['../classst7565_1_1Glcd.html#a80c5a50488b220285f947ca41295e0b4',1,'st7565::Glcd']]],
+  ['set_5fbacklight_5fcolor_129',['set_backlight_color',['../classst7565_1_1Glcd.html#ab1444b48506c96540e6c560b7de9f9d5',1,'st7565::Glcd']]],
+  ['set_5fcontrast_130',['set_contrast',['../classst7565_1_1Glcd.html#a40c12e5eaa8432edc8d5aef2a39a3842',1,'st7565::Glcd']]],
+  ['sleep_131',['sleep',['../classst7565_1_1Glcd.html#a858eab8e49fff52a022cc08bbeaf30dc',1,'st7565::Glcd']]],
+  ['spidisplay_132',['spiDisplay',['../namespacespiDisplay.html',1,'']]],
+  ['spidisplay_2epy_133',['spiDisplay.py',['../spiDisplay_8py.html',1,'']]],
+  ['spidisplayinit_134',['spiDisplayInit',['../namespacespiDisplay.html#a1b5eec7a2b6932422eb8dc8e13340c27',1,'spiDisplay']]],
+  ['st7565_135',['st7565',['../namespacest7565.html',1,'']]],
+  ['st7565_2epy_136',['st7565.py',['../st7565_8py.html',1,'']]],
+  ['standby_137',['standby',['../classst7565_1_1Glcd.html#af65f43453953dca33bde59bff48beeb6',1,'st7565::Glcd']]],
+  ['start_138',['start',['../namespacestopwatch.html#a550769bbd4e7537ff90a656f5b0c23b2',1,'stopwatch']]],
+  ['start_5fletter_139',['start_letter',['../classxglcd__font_1_1XglcdFont.html#abe98533c004489124112ba896ba088ad',1,'xglcd_font::XglcdFont']]],
+  ['start_5ftime_140',['start_time',['../namespacetimer.html#a2530c3908f0179486a4c2255f792e27a',1,'timer']]],
+  ['stats_141',['stats',['../namespacestats.html',1,'']]],
+  ['stats_2epy_142',['stats.py',['../stats_8py.html',1,'']]],
+  ['status_143',['status',['../namespacestopwatch.html#a015eb90e0de9f16e87bd149d4b9ce959',1,'stopwatch.status()'],['../namespacetimer.html#a015eb90e0de9f16e87bd149d4b9ce959',1,'timer.status()']]],
+  ['stopwatch_144',['stopwatch',['../namespacestopwatch.html',1,'']]],
+  ['stopwatch_2epy_145',['stopwatch.py',['../stopwatch_8py.html',1,'']]],
+  ['stopwatch_5factive_146',['stopwatch_active',['../namespacestopwatch.html#a76ee27f0cbc0706b4709d7e16ab3d787',1,'stopwatch']]]
+];

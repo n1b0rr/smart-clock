@@ -1,0 +1,80 @@
+\hypertarget{namespacestopwatch}{}\doxysection{stopwatch Namespace Reference}
+\label{namespacestopwatch}\index{stopwatch@{stopwatch}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacestopwatch_aed99fc1d065e5540f22b5ccbcdd8b3f0}{backup}} = 0
+\item 
+\mbox{\hyperlink{namespacestopwatch_a3e08a16703943b810da7b8b2a915c836}{buttons}} = \mbox{\hyperlink{classbuttons_1_1Buttons}{Buttons}}(12,16,20,21)
+\item 
+\mbox{\hyperlink{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}{hours}} = int(\mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}}/3600)
+\item 
+int \mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}} = 0
+\item 
+\mbox{\hyperlink{namespacestopwatch_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}} = int((\mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}} -\/ (\mbox{\hyperlink{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600))/60)
+\item 
+\mbox{\hyperlink{namespacestopwatch_a50a97477ff59a28b3dd9315b21e66a23}{seconds}} = int(\mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}} -\/ (\mbox{\hyperlink{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600) -\/ (\mbox{\hyperlink{namespacestopwatch_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}}$\ast$60))
+\item 
+\mbox{\hyperlink{namespacestopwatch_a550769bbd4e7537ff90a656f5b0c23b2}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacestopwatch_a015eb90e0de9f16e87bd149d4b9ce959}{status}} = buttons.\+poll()
+\item 
+bool \mbox{\hyperlink{namespacestopwatch_a76ee27f0cbc0706b4709d7e16ab3d787}{stopwatch\+\_\+active}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacestopwatch_aed99fc1d065e5540f22b5ccbcdd8b3f0}\label{namespacestopwatch_aed99fc1d065e5540f22b5ccbcdd8b3f0}} 
+\index{stopwatch@{stopwatch}!backup@{backup}}
+\index{backup@{backup}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{backup}{backup}}
+{\footnotesize\ttfamily int backup = 0}
+
+\mbox{\Hypertarget{namespacestopwatch_a3e08a16703943b810da7b8b2a915c836}\label{namespacestopwatch_a3e08a16703943b810da7b8b2a915c836}} 
+\index{stopwatch@{stopwatch}!buttons@{buttons}}
+\index{buttons@{buttons}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{buttons}{buttons}}
+{\footnotesize\ttfamily buttons = \mbox{\hyperlink{classbuttons_1_1Buttons}{Buttons}}(12,16,20,21)}
+
+\mbox{\Hypertarget{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}\label{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}} 
+\index{stopwatch@{stopwatch}!hours@{hours}}
+\index{hours@{hours}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{hours}{hours}}
+{\footnotesize\ttfamily hours = int(\mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}}/3600)}
+
+\mbox{\Hypertarget{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}\label{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}} 
+\index{stopwatch@{stopwatch}!interval@{interval}}
+\index{interval@{interval}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{interval}{interval}}
+{\footnotesize\ttfamily int interval = 0}
+
+\mbox{\Hypertarget{namespacestopwatch_af5dbdc01944a3c8569aa2ea8aeeb402c}\label{namespacestopwatch_af5dbdc01944a3c8569aa2ea8aeeb402c}} 
+\index{stopwatch@{stopwatch}!minutes@{minutes}}
+\index{minutes@{minutes}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily minutes = int((\mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}} -\/ (\mbox{\hyperlink{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600))/60)}
+
+\mbox{\Hypertarget{namespacestopwatch_a50a97477ff59a28b3dd9315b21e66a23}\label{namespacestopwatch_a50a97477ff59a28b3dd9315b21e66a23}} 
+\index{stopwatch@{stopwatch}!seconds@{seconds}}
+\index{seconds@{seconds}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily seconds = int(\mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}} -\/ (\mbox{\hyperlink{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600) -\/ (\mbox{\hyperlink{namespacestopwatch_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}}$\ast$60))}
+
+\mbox{\Hypertarget{namespacestopwatch_a550769bbd4e7537ff90a656f5b0c23b2}\label{namespacestopwatch_a550769bbd4e7537ff90a656f5b0c23b2}} 
+\index{stopwatch@{stopwatch}!start@{start}}
+\index{start@{start}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily start = time.\+time()}
+
+\mbox{\Hypertarget{namespacestopwatch_a015eb90e0de9f16e87bd149d4b9ce959}\label{namespacestopwatch_a015eb90e0de9f16e87bd149d4b9ce959}} 
+\index{stopwatch@{stopwatch}!status@{status}}
+\index{status@{status}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily status = buttons.\+poll()}
+
+\mbox{\Hypertarget{namespacestopwatch_a76ee27f0cbc0706b4709d7e16ab3d787}\label{namespacestopwatch_a76ee27f0cbc0706b4709d7e16ab3d787}} 
+\index{stopwatch@{stopwatch}!stopwatch\_active@{stopwatch\_active}}
+\index{stopwatch\_active@{stopwatch\_active}!stopwatch@{stopwatch}}
+\doxysubsubsection{\texorpdfstring{stopwatch\_active}{stopwatch\_active}}
+{\footnotesize\ttfamily bool stopwatch\+\_\+active = False}
+

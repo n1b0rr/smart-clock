@@ -1,0 +1,133 @@
+\hypertarget{classxglcd__font_1_1XglcdFont}{}\doxysection{Xglcd\+Font Class Reference}
+\label{classxglcd__font_1_1XglcdFont}\index{XglcdFont@{XglcdFont}}
+
+
+Inheritance diagram for Xglcd\+Font\+:
+% FIG 0
+
+
+Collaboration diagram for Xglcd\+Font\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a1a5464acdce0c2e72290b2e3572b6d8e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, path, \mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a5558ace5433f9aabbf0a0ec059900d94}{width}}, \mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a509290c21d570ff479c1b9d9b1fe8810}{height}}, \mbox{\hyperlink{classxglcd__font_1_1XglcdFont_abe98533c004489124112ba896ba088ad}{start\+\_\+letter}}=32)
+\item 
+def \mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a03e39eba6f94660e8e05601f28a7be26}{get\+\_\+letter}} (self, letter, landscape=True)
+\item 
+def \mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a508ee08f825714dc3122c8198c5147ca}{measure\+\_\+text}} (self, text, spacing=1)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a509290c21d570ff479c1b9d9b1fe8810}{height}}
+\item 
+\mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a9d3c2a2c430ea6aa89cb63b7897449d9}{height\+\_\+bytes}}
+\item 
+\mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a28cf43104fd1c60dcc926ab3eae99923}{letters}}
+\item 
+\mbox{\hyperlink{classxglcd__font_1_1XglcdFont_abe98533c004489124112ba896ba088ad}{start\+\_\+letter}}
+\item 
+\mbox{\hyperlink{classxglcd__font_1_1XglcdFont_a5558ace5433f9aabbf0a0ec059900d94}{width}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Font data in X-GLCD format
+Attributes:
+    letters: A 2D Numpy array of letters (rows are letters, cols are bytes)
+    width: Maximum pixel width of font
+    height: Pixel height of font
+    start_letter: ASCII number of first letter
+    height_bytes: How many bytes comprises letter height
+    
+Note: 
+    Font files can be generated with the free version of MikroElektronika 
+    GLCD Font Creator:  www.mikroe.com/glcd-font-creator  
+    The font file must be in X-GLCD 'C' format.
+    To save text files from this font creator program in Win7 or higher 
+    you must use XP compatibility mode or you can just use the clipboard.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_a1a5464acdce0c2e72290b2e3572b6d8e}\label{classxglcd__font_1_1XglcdFont_a1a5464acdce0c2e72290b2e3572b6d8e}} 
+\index{XglcdFont@{XglcdFont}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{width,  }\item[{}]{height,  }\item[{}]{start\+\_\+letter = {\ttfamily 32} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructor for X-GLCD Font object.
+Args:
+    path (string): Full path of font file
+    width (int): Maximum width in pixels of each letter
+    height (int): Height in pixels of each letter
+    start_letter (int): First ACII letter.  Default is 32.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_a03e39eba6f94660e8e05601f28a7be26}\label{classxglcd__font_1_1XglcdFont_a03e39eba6f94660e8e05601f28a7be26}} 
+\index{XglcdFont@{XglcdFont}!get\_letter@{get\_letter}}
+\index{get\_letter@{get\_letter}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{get\_letter()}{get\_letter()}}
+{\footnotesize\ttfamily def get\+\_\+letter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{letter,  }\item[{}]{landscape = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts 1D letter byte data to 2D bit array
+Args:
+    letter (string): Letter to return.
+    landscape (boolean): Rotates letter 90 degrees.  Default is true.
+Returns:
+    Numpy Array(Uint8): 2D bit representation of letter
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_a508ee08f825714dc3122c8198c5147ca}\label{classxglcd__font_1_1XglcdFont_a508ee08f825714dc3122c8198c5147ca}} 
+\index{XglcdFont@{XglcdFont}!measure\_text@{measure\_text}}
+\index{measure\_text@{measure\_text}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{measure\_text()}{measure\_text()}}
+{\footnotesize\ttfamily def measure\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text,  }\item[{}]{spacing = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Measure length of text string in pixels
+Args:
+    text (string): Text string to measure
+    spacing (optional int): Pixel spacing between letters.  Default is 1.
+Returns:
+    int: length of text
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_a509290c21d570ff479c1b9d9b1fe8810}\label{classxglcd__font_1_1XglcdFont_a509290c21d570ff479c1b9d9b1fe8810}} 
+\index{XglcdFont@{XglcdFont}!height@{height}}
+\index{height@{height}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily height}
+
+\mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_a9d3c2a2c430ea6aa89cb63b7897449d9}\label{classxglcd__font_1_1XglcdFont_a9d3c2a2c430ea6aa89cb63b7897449d9}} 
+\index{XglcdFont@{XglcdFont}!height\_bytes@{height\_bytes}}
+\index{height\_bytes@{height\_bytes}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{height\_bytes}{height\_bytes}}
+{\footnotesize\ttfamily height\+\_\+bytes}
+
+\mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_a28cf43104fd1c60dcc926ab3eae99923}\label{classxglcd__font_1_1XglcdFont_a28cf43104fd1c60dcc926ab3eae99923}} 
+\index{XglcdFont@{XglcdFont}!letters@{letters}}
+\index{letters@{letters}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{letters}{letters}}
+{\footnotesize\ttfamily letters}
+
+\mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_abe98533c004489124112ba896ba088ad}\label{classxglcd__font_1_1XglcdFont_abe98533c004489124112ba896ba088ad}} 
+\index{XglcdFont@{XglcdFont}!start\_letter@{start\_letter}}
+\index{start\_letter@{start\_letter}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{start\_letter}{start\_letter}}
+{\footnotesize\ttfamily start\+\_\+letter}
+
+\mbox{\Hypertarget{classxglcd__font_1_1XglcdFont_a5558ace5433f9aabbf0a0ec059900d94}\label{classxglcd__font_1_1XglcdFont_a5558ace5433f9aabbf0a0ec059900d94}} 
+\index{XglcdFont@{XglcdFont}!width@{width}}
+\index{width@{width}!XglcdFont@{XglcdFont}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily width}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+software/\mbox{\hyperlink{xglcd__font_8py}{xglcd\+\_\+font.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+\hypertarget{stopwatch_8py}{}\doxysection{software/stopwatch.py File Reference}
+\label{stopwatch_8py}\index{software/stopwatch.py@{software/stopwatch.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacestopwatch}{stopwatch}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacestopwatch_aed99fc1d065e5540f22b5ccbcdd8b3f0}{backup}} = 0
+\item 
+\mbox{\hyperlink{namespacestopwatch_a3e08a16703943b810da7b8b2a915c836}{buttons}} = Buttons(12,16,20,21)
+\item 
+\mbox{\hyperlink{namespacestopwatch_a077571f72adb79cb0b39788ff23746a4}{hours}} = int(interval/3600)
+\item 
+int \mbox{\hyperlink{namespacestopwatch_ae0c690118932b32ef40a74bb6a259acd}{interval}} = 0
+\item 
+\mbox{\hyperlink{namespacestopwatch_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}} = int((interval -\/ (hours$\ast$3600))/60)
+\item 
+\mbox{\hyperlink{namespacestopwatch_a50a97477ff59a28b3dd9315b21e66a23}{seconds}} = int(interval -\/ (hours$\ast$3600) -\/ (minutes$\ast$60))
+\item 
+\mbox{\hyperlink{namespacestopwatch_a550769bbd4e7537ff90a656f5b0c23b2}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacestopwatch_a015eb90e0de9f16e87bd149d4b9ce959}{status}} = buttons.\+poll()
+\item 
+bool \mbox{\hyperlink{namespacestopwatch_a76ee27f0cbc0706b4709d7e16ab3d787}{stopwatch\+\_\+active}} = False
+\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+\hypertarget{timer_8py}{}\doxysection{software/timer.py File Reference}
+\label{timer_8py}\index{software/timer.py@{software/timer.py}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespacetimer}{timer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetimer_ac2e0513e0c8653cb9d428c8dd88282e2}{alarm}} = Alarm(26)
+\item 
+bool \mbox{\hyperlink{namespacetimer_a45faf04b6f1ff591465c42c404382969}{alarm\+\_\+enabled}} = False
+\item 
+int \mbox{\hyperlink{namespacetimer_aed99fc1d065e5540f22b5ccbcdd8b3f0}{backup}} = timer
+\item 
+\mbox{\hyperlink{namespacetimer_a3e08a16703943b810da7b8b2a915c836}{buttons}} = Buttons(12,16,20,21)
+\item 
+\mbox{\hyperlink{namespacetimer_a077571f72adb79cb0b39788ff23746a4}{hours}} = int(timer/3600)
+\item 
+\mbox{\hyperlink{namespacetimer_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}} = int((timer -\/ (hours$\ast$3600))/60)
+\item 
+\mbox{\hyperlink{namespacetimer_a50a97477ff59a28b3dd9315b21e66a23}{seconds}} = int(timer -\/ (hours$\ast$3600) -\/ (minutes$\ast$60))
+\item 
+\mbox{\hyperlink{namespacetimer_a2530c3908f0179486a4c2255f792e27a}{start\+\_\+time}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacetimer_a015eb90e0de9f16e87bd149d4b9ce959}{status}} = buttons.\+poll()
+\item 
+int \mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}} = 0
+\item 
+bool \mbox{\hyperlink{namespacetimer_a13d26c2ea09a0253d432db21467c801d}{timer\+\_\+active}} = False
+\end{DoxyCompactItemize}

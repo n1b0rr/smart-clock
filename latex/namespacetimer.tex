@@ -1,0 +1,96 @@
+\hypertarget{namespacetimer}{}\doxysection{timer Namespace Reference}
+\label{namespacetimer}\index{timer@{timer}}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetimer_ac2e0513e0c8653cb9d428c8dd88282e2}{alarm}} = \mbox{\hyperlink{classalarm_1_1Alarm}{Alarm}}(26)
+\item 
+bool \mbox{\hyperlink{namespacetimer_a45faf04b6f1ff591465c42c404382969}{alarm\+\_\+enabled}} = False
+\item 
+int \mbox{\hyperlink{namespacetimer_aed99fc1d065e5540f22b5ccbcdd8b3f0}{backup}} = \mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}}
+\item 
+\mbox{\hyperlink{namespacetimer_a3e08a16703943b810da7b8b2a915c836}{buttons}} = \mbox{\hyperlink{classbuttons_1_1Buttons}{Buttons}}(12,16,20,21)
+\item 
+\mbox{\hyperlink{namespacetimer_a077571f72adb79cb0b39788ff23746a4}{hours}} = int(\mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}}/3600)
+\item 
+\mbox{\hyperlink{namespacetimer_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}} = int((\mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}} -\/ (\mbox{\hyperlink{namespacetimer_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600))/60)
+\item 
+\mbox{\hyperlink{namespacetimer_a50a97477ff59a28b3dd9315b21e66a23}{seconds}} = int(\mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}} -\/ (\mbox{\hyperlink{namespacetimer_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600) -\/ (\mbox{\hyperlink{namespacetimer_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}}$\ast$60))
+\item 
+\mbox{\hyperlink{namespacetimer_a2530c3908f0179486a4c2255f792e27a}{start\+\_\+time}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacetimer_a015eb90e0de9f16e87bd149d4b9ce959}{status}} = buttons.\+poll()
+\item 
+int \mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}} = 0
+\item 
+bool \mbox{\hyperlink{namespacetimer_a13d26c2ea09a0253d432db21467c801d}{timer\+\_\+active}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespacetimer_ac2e0513e0c8653cb9d428c8dd88282e2}\label{namespacetimer_ac2e0513e0c8653cb9d428c8dd88282e2}} 
+\index{timer@{timer}!alarm@{alarm}}
+\index{alarm@{alarm}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{alarm}{alarm}}
+{\footnotesize\ttfamily alarm = \mbox{\hyperlink{classalarm_1_1Alarm}{Alarm}}(26)}
+
+\mbox{\Hypertarget{namespacetimer_a45faf04b6f1ff591465c42c404382969}\label{namespacetimer_a45faf04b6f1ff591465c42c404382969}} 
+\index{timer@{timer}!alarm\_enabled@{alarm\_enabled}}
+\index{alarm\_enabled@{alarm\_enabled}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{alarm\_enabled}{alarm\_enabled}}
+{\footnotesize\ttfamily bool alarm\+\_\+enabled = False}
+
+\mbox{\Hypertarget{namespacetimer_aed99fc1d065e5540f22b5ccbcdd8b3f0}\label{namespacetimer_aed99fc1d065e5540f22b5ccbcdd8b3f0}} 
+\index{timer@{timer}!backup@{backup}}
+\index{backup@{backup}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{backup}{backup}}
+{\footnotesize\ttfamily int backup = \mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}}}
+
+\mbox{\Hypertarget{namespacetimer_a3e08a16703943b810da7b8b2a915c836}\label{namespacetimer_a3e08a16703943b810da7b8b2a915c836}} 
+\index{timer@{timer}!buttons@{buttons}}
+\index{buttons@{buttons}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{buttons}{buttons}}
+{\footnotesize\ttfamily buttons = \mbox{\hyperlink{classbuttons_1_1Buttons}{Buttons}}(12,16,20,21)}
+
+\mbox{\Hypertarget{namespacetimer_a077571f72adb79cb0b39788ff23746a4}\label{namespacetimer_a077571f72adb79cb0b39788ff23746a4}} 
+\index{timer@{timer}!hours@{hours}}
+\index{hours@{hours}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{hours}{hours}}
+{\footnotesize\ttfamily hours = int(\mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}}/3600)}
+
+\mbox{\Hypertarget{namespacetimer_af5dbdc01944a3c8569aa2ea8aeeb402c}\label{namespacetimer_af5dbdc01944a3c8569aa2ea8aeeb402c}} 
+\index{timer@{timer}!minutes@{minutes}}
+\index{minutes@{minutes}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{minutes}{minutes}}
+{\footnotesize\ttfamily minutes = int((\mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}} -\/ (\mbox{\hyperlink{namespacetimer_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600))/60)}
+
+\mbox{\Hypertarget{namespacetimer_a50a97477ff59a28b3dd9315b21e66a23}\label{namespacetimer_a50a97477ff59a28b3dd9315b21e66a23}} 
+\index{timer@{timer}!seconds@{seconds}}
+\index{seconds@{seconds}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{seconds}{seconds}}
+{\footnotesize\ttfamily seconds = int(\mbox{\hyperlink{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}{timer}} -\/ (\mbox{\hyperlink{namespacetimer_a077571f72adb79cb0b39788ff23746a4}{hours}}$\ast$3600) -\/ (\mbox{\hyperlink{namespacetimer_af5dbdc01944a3c8569aa2ea8aeeb402c}{minutes}}$\ast$60))}
+
+\mbox{\Hypertarget{namespacetimer_a2530c3908f0179486a4c2255f792e27a}\label{namespacetimer_a2530c3908f0179486a4c2255f792e27a}} 
+\index{timer@{timer}!start\_time@{start\_time}}
+\index{start\_time@{start\_time}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{start\_time}{start\_time}}
+{\footnotesize\ttfamily start\+\_\+time = time.\+time()}
+
+\mbox{\Hypertarget{namespacetimer_a015eb90e0de9f16e87bd149d4b9ce959}\label{namespacetimer_a015eb90e0de9f16e87bd149d4b9ce959}} 
+\index{timer@{timer}!status@{status}}
+\index{status@{status}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily status = buttons.\+poll()}
+
+\mbox{\Hypertarget{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}\label{namespacetimer_ae2c6087027bfdf561a2b766975b47ee8}} 
+\index{timer@{timer}!timer@{timer}}
+\index{timer@{timer}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily int timer = 0}
+
+\mbox{\Hypertarget{namespacetimer_a13d26c2ea09a0253d432db21467c801d}\label{namespacetimer_a13d26c2ea09a0253d432db21467c801d}} 
+\index{timer@{timer}!timer\_active@{timer\_active}}
+\index{timer\_active@{timer\_active}!timer@{timer}}
+\doxysubsubsection{\texorpdfstring{timer\_active}{timer\_active}}
+{\footnotesize\ttfamily bool timer\+\_\+active = False}
+

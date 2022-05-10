@@ -1,0 +1,811 @@
+\hypertarget{classst7565_1_1Glcd}{}\doxysection{Glcd Class Reference}
+\label{classst7565_1_1Glcd}\index{Glcd@{Glcd}}
+
+
+Inheritance diagram for Glcd\+:
+% FIG 0
+
+
+Collaboration diagram for Glcd\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a6540d990f53d5670a73d535fd9985f8e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classst7565_1_1Glcd_a14b993520fb1a59ba6af8d3a6943854b}{a0}}=24, \mbox{\hyperlink{classst7565_1_1Glcd_ac071bd38e4c31ed73ec02faa32b52e4a}{cs}}=8, \mbox{\hyperlink{classst7565_1_1Glcd_aa7160831f90c30e542484d4419692d23}{rst}}=25, rgb=None)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_ad437efc961d478c0fbe40e9ad2a0578a}{cleanup}} (self)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a75ac5f579b985c165dc78c92feb4b30b}{clear\+\_\+back\+\_\+buffer}} (self)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a0ac420bdcbc2ae2140c5237c44987b85}{clear\+\_\+display}} (self)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a9c27c26c63efc2183fdf1de0b7a6c033}{draw\+\_\+bitmap}} (self, bitmap, x=0, y=0)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_aaa3f6e6144c31c4a8143c1e20aabe8cf}{draw\+\_\+circle}} (self, x0, y0, r, color=1)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a88520a3d8e953f374e28dacd42ab9557}{draw\+\_\+ellipse}} (self, x0, y0, a, b, color=1)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a526e6a8b35be6d4636f9a4ad45b3a9f5}{draw\+\_\+letter}} (self, letter, font, x, y, invert=False, landscape=True)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_ae41e8d49a3eeda1c19a64709668c2b88}{draw\+\_\+line}} (self, x1, y1, x2, y2, color=1, invert=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_ab7eca64dff6f6fa294686ab51fdfd2dd}{draw\+\_\+lines}} (self, coords, color=1, invert=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a6644cc1df539645b799d8cbecd273513}{draw\+\_\+point}} (self, x, y, color=1, invert=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a98613ce6e4881335593164d5cd684177}{draw\+\_\+polygon}} (self, sides, x0, y0, r, rotate=0, color=1)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a238f0ddbca6469b3e4963e41bde9ac9a}{draw\+\_\+rectangle}} (self, x1, y1, w, h, color=1, invert=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a195734f20169ebbf5b3708618458e1ef}{draw\+\_\+string}} (self, text, font, x, y, spacing=1, invert=False, landscape=True)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a41124d8d851b030e78fda0087147469e}{fill\+\_\+circle}} (self, x0, y0, r, color=1)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a9fab67648a203b82a1fd03dd7da8b2a2}{fill\+\_\+ellipse}} (self, x0, y0, a, b, color=1)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_ad2ccdf644a088014f653afd17af86f06}{fill\+\_\+polygon}} (self, sides, x0, y0, r, rotate=0, color=1, invert=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_afc6f6312ec085bf566952803165fddad}{fill\+\_\+rectangle}} (self, x1, y1, w, h, color=1, invert=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a223dbb87add79364140fb47b5ddb318e}{flip}} (self)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a20d534c164e50186b757885079f2994e}{init}} (self)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_af0034e78fb6aafcf3fad9d211ff786a3}{is\+\_\+off\+\_\+grid}} (self, xmin, ymin, xmax, ymax)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_aa7b8434ccecec1d80286e772e08c4df9}{is\+\_\+point}} (self, x, y)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a2f6cb6618921ba1b2713df14f5a7c903}{load\+\_\+bitmap}} (self, path, width=\mbox{\hyperlink{classst7565_1_1Glcd_a6764a3cd52e29175aa26ca7049e82a67}{LCD\+\_\+\+WIDTH}}, height=\mbox{\hyperlink{classst7565_1_1Glcd_a1a72754a3df224f4b21be377c09f7a16}{LCD\+\_\+\+HEIGHT}}, invert=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a4308ffa8f7ff21f972fcbab392a18d80}{move\+\_\+cursor}} (self, x, page)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a51829b63adb24ac48d350dee60181002}{reset}} (self)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a0cc2dd3f3909eef733411e19cd193b93}{reverse\+\_\+display}} (self, reverse=True)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_ad17ab3cf51b12bcfd52191f2c3c98b39}{save\+\_\+bitmap}} (self, path, x1=0, y1=0, width=\mbox{\hyperlink{classst7565_1_1Glcd_a6764a3cd52e29175aa26ca7049e82a67}{LCD\+\_\+\+WIDTH}}, height=\mbox{\hyperlink{classst7565_1_1Glcd_a1a72754a3df224f4b21be377c09f7a16}{LCD\+\_\+\+HEIGHT}})
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_af66126c7e06108bf0a1ebea41ac4ed1d}{send\+\_\+command}} (self, cmd)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a80c5a50488b220285f947ca41295e0b4}{send\+\_\+data}} (self, data)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_ab1444b48506c96540e6c560b7de9f9d5}{set\+\_\+backlight\+\_\+color}} (self, r, g, b)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a40c12e5eaa8432edc8d5aef2a39a3842}{set\+\_\+contrast}} (self, level)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_a858eab8e49fff52a022cc08bbeaf30dc}{sleep}} (self)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_af65f43453953dca33bde59bff48beeb6}{standby}} (self, exit=False)
+\item 
+def \mbox{\hyperlink{classst7565_1_1Glcd_aa3876d9aefb1d0f2b11772a7baea5a2e}{wake}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classst7565_1_1Glcd_a14b993520fb1a59ba6af8d3a6943854b}{a0}}
+\item 
+\mbox{\hyperlink{classst7565_1_1Glcd_a4a87e8f1bce825a57a0fa95c9d467afc}{back\+\_\+buffer}}
+\item 
+\mbox{\hyperlink{classst7565_1_1Glcd_aa6074166cc77c18081343a82d3af99bf}{blue}}
+\item 
+\mbox{\hyperlink{classst7565_1_1Glcd_ac071bd38e4c31ed73ec02faa32b52e4a}{cs}}
+\item 
+\mbox{\hyperlink{classst7565_1_1Glcd_ad83fb941855ba7c4aa2bb65245437777}{green}}
+\item 
+\mbox{\hyperlink{classst7565_1_1Glcd_a42c3a4a0281e61ee592e36a3eda020f2}{red}}
+\item 
+\mbox{\hyperlink{classst7565_1_1Glcd_aa7160831f90c30e542484d4419692d23}{rst}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a2f1b0a7ffa6db4743db6862a8e6eff8f}{BACKLIGHT\+\_\+\+PWM\+\_\+\+FREQUENCY}} = 100
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_abd9f9d74d964d9dd5bce97844621527e}{CMD\+\_\+\+DISPLAY\+\_\+\+OFF}} = 0x\+AE
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a425cfc005060bb21ccb1a10f77db22fe}{CMD\+\_\+\+DISPLAY\+\_\+\+ON}} = 0x\+AF
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_ac1dd879e72bd79fabc324b7f81b1db15}{CMD\+\_\+\+INTERNAL\+\_\+\+RESET}} = 0x\+E2
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a94fef7b0b412f19b1850448a419a8169}{CMD\+\_\+\+SET\+\_\+\+ADC\+\_\+\+NORMAL}} = 0x\+A0
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a027dbe8e59638c61ea9c48b64aa7a04a}{CMD\+\_\+\+SET\+\_\+\+ADC\+\_\+\+REVERSE}} = 0x\+A1
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a10af89ce1cea51f6a6d4718b5403e855}{CMD\+\_\+\+SET\+\_\+\+ALLPTS\+\_\+\+NORMAL}} = 0x\+A4
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a4a466051b7684707fcd1cb67e0040594}{CMD\+\_\+\+SET\+\_\+\+ALLPTS\+\_\+\+ON}} = 0x\+A5
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_ab83f6d4f852fcbec5e5a31a4ef034926}{CMD\+\_\+\+SET\+\_\+\+BIAS\+\_\+7}} = 0x\+A3
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_ac9e31815eeab81bbfedaa6a7acf5ff84}{CMD\+\_\+\+SET\+\_\+\+BIAS\+\_\+9}} = 0x\+A2
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_aaa13b95290084ac43b7feec33939d3de}{CMD\+\_\+\+SET\+\_\+\+COLUMN\+\_\+\+LOWER}} = 0x00
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_ad80ef8044201a74f6dfe7c0f8c8df5d6}{CMD\+\_\+\+SET\+\_\+\+COLUMN\+\_\+\+UPPER}} = 0x10
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a57384de778f1458701e80cb378d3ac21}{CMD\+\_\+\+SET\+\_\+\+COM\+\_\+\+NORMAL}} = 0x\+C0
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_ad0055dd2f9d2737b4b94a6455f406901}{CMD\+\_\+\+SET\+\_\+\+COM\+\_\+\+REVERSE}} = 0x\+C8
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a43133db2cdeff4a878920a36a44f7d2a}{CMD\+\_\+\+SET\+\_\+\+DISP\+\_\+\+NORMAL}} = 0x\+A6
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a288b0fdf393fe70b3b7a37d394124edb}{CMD\+\_\+\+SET\+\_\+\+DISP\+\_\+\+REVERSE}} = 0x\+A7
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_ae5e75338c16a7c942a7a936a8d144741}{CMD\+\_\+\+SET\+\_\+\+DISP\+\_\+\+START\+\_\+\+LINE}} = 0x40
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a0563262cb690e34771b424428e920278}{CMD\+\_\+\+SET\+\_\+\+PAGE}} = 0x\+B0
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_abedbcf3068c0aa54f9905a7d94910cbb}{CMD\+\_\+\+SET\+\_\+\+POWER\+\_\+\+CONTROL}} = 0x28
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a48d272f9d9971a09664e2c9df0e6873a}{CMD\+\_\+\+SET\+\_\+\+RESISTOR\+\_\+\+RATIO}} = 0x20
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_aeb4011cf9dad5417edad8269ce8b5f07}{CMD\+\_\+\+SET\+\_\+\+STATIC\+\_\+\+OFF}} = 0x\+AC
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a09cb62319bea0c5a6d6d3731658cd0fe}{CMD\+\_\+\+SET\+\_\+\+STATIC\+\_\+\+ON}} = 0x\+AD
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a3c264254dfcabff1eef4956711a57d45}{CMD\+\_\+\+SET\+\_\+\+STATIC\+\_\+\+REG}} = 0x00
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a664d9296bbc6bbbaaef24303cb47a003}{CMD\+\_\+\+SET\+\_\+\+VOLUME\+\_\+\+FIRST}} = 0x81
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a90c434469efc6da48fc1ae8dbdf458c4}{CMD\+\_\+\+SET\+\_\+\+VOLUME\+\_\+\+SECOND}} = 0x00
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a1ce69225827313c4e48e5d2fdc031e8c}{LCD\+\_\+\+CONTRAST}} = 0x19
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a1a72754a3df224f4b21be377c09f7a16}{LCD\+\_\+\+HEIGHT}} = 64
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a2710eb1315534fcb91d5908278e6cead}{LCD\+\_\+\+PAGE\+\_\+\+COUNT}} = 8
+\item 
+int \mbox{\hyperlink{classst7565_1_1Glcd_a6764a3cd52e29175aa26ca7049e82a67}{LCD\+\_\+\+WIDTH}} = 128
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}ST7565 graphics lcd module object
+Note:  All coordinates are zero based.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classst7565_1_1Glcd_a6540d990f53d5670a73d535fd9985f8e}\label{classst7565_1_1Glcd_a6540d990f53d5670a73d535fd9985f8e}} 
+\index{Glcd@{Glcd}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{a0 = {\ttfamily 24},  }\item[{}]{cs = {\ttfamily 8},  }\item[{}]{rst = {\ttfamily 25},  }\item[{}]{rgb = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructor for ST7565.
+Args:
+    a0 (int):  Register select address GPIO pin
+    cs (int):  Chip select GPIO pin
+    rst (int): Reset GPIO pin
+    rgb (Optional [int]): RGB backlight GPIO pin list. Default is None.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classst7565_1_1Glcd_ad437efc961d478c0fbe40e9ad2a0578a}\label{classst7565_1_1Glcd_ad437efc961d478c0fbe40e9ad2a0578a}} 
+\index{Glcd@{Glcd}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily def cleanup (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clean up SPI and GPIO\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a75ac5f579b985c165dc78c92feb4b30b}\label{classst7565_1_1Glcd_a75ac5f579b985c165dc78c92feb4b30b}} 
+\index{Glcd@{Glcd}!clear\_back\_buffer@{clear\_back\_buffer}}
+\index{clear\_back\_buffer@{clear\_back\_buffer}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{clear\_back\_buffer()}{clear\_back\_buffer()}}
+{\footnotesize\ttfamily def clear\+\_\+back\+\_\+buffer (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear back buffer only\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a0ac420bdcbc2ae2140c5237c44987b85}\label{classst7565_1_1Glcd_a0ac420bdcbc2ae2140c5237c44987b85}} 
+\index{Glcd@{Glcd}!clear\_display@{clear\_display}}
+\index{clear\_display@{clear\_display}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{clear\_display()}{clear\_display()}}
+{\footnotesize\ttfamily def clear\+\_\+display (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clear ST7565 display\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a9c27c26c63efc2183fdf1de0b7a6c033}\label{classst7565_1_1Glcd_a9c27c26c63efc2183fdf1de0b7a6c033}} 
+\index{Glcd@{Glcd}!draw\_bitmap@{draw\_bitmap}}
+\index{draw\_bitmap@{draw\_bitmap}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_bitmap()}{draw\_bitmap()}}
+{\footnotesize\ttfamily def draw\+\_\+bitmap (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{bitmap,  }\item[{}]{x = {\ttfamily 0},  }\item[{}]{y = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a raw bitmap to the back buffer
+Args:
+    bitmap (Numpy array): 2D array of monochrome pixels
+    x, y (int): Top left coordinates to place bitmap
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_aaa3f6e6144c31c4a8143c1e20aabe8cf}\label{classst7565_1_1Glcd_aaa3f6e6144c31c4a8143c1e20aabe8cf}} 
+\index{Glcd@{Glcd}!draw\_circle@{draw\_circle}}
+\index{draw\_circle@{draw\_circle}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_circle()}{draw\_circle()}}
+{\footnotesize\ttfamily def draw\+\_\+circle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x0,  }\item[{}]{y0,  }\item[{}]{r,  }\item[{}]{color = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a circle on the back buffer
+Args:
+    x0, y0 (int): Pixel coordinates of center point
+    r (int): Radius
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+Note:
+    The center point is the center of the x0,y0 pixel.
+    Since pixels are not divisible, the radius is integer rounded
+    up to complete on a full pixel.  Therefore diameter = 2 x r + 1.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a88520a3d8e953f374e28dacd42ab9557}\label{classst7565_1_1Glcd_a88520a3d8e953f374e28dacd42ab9557}} 
+\index{Glcd@{Glcd}!draw\_ellipse@{draw\_ellipse}}
+\index{draw\_ellipse@{draw\_ellipse}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_ellipse()}{draw\_ellipse()}}
+{\footnotesize\ttfamily def draw\+\_\+ellipse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x0,  }\item[{}]{y0,  }\item[{}]{a,  }\item[{}]{b,  }\item[{}]{color = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws an ellipse on the back buffer
+Args:
+    x0, y0 (int): Pixel coordinates of center point
+    a (int): Semi axis horizontal
+    b (int): Semi axis vertical
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+Note:
+    The center point is the center of the x0,y0 pixel.
+    Since pixels are not divisible, the axes are integer rounded
+    up to complete on a full pixel.  Therefore the major and
+    minor axes are increased by 1.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a526e6a8b35be6d4636f9a4ad45b3a9f5}\label{classst7565_1_1Glcd_a526e6a8b35be6d4636f9a4ad45b3a9f5}} 
+\index{Glcd@{Glcd}!draw\_letter@{draw\_letter}}
+\index{draw\_letter@{draw\_letter}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_letter()}{draw\_letter()}}
+{\footnotesize\ttfamily def draw\+\_\+letter (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{letter,  }\item[{}]{font,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{invert = {\ttfamily False},  }\item[{}]{landscape = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a single letter on the back buffer
+Args:
+    letter (string): Letter
+    font (XglcdFont object): Font
+    x, y (int): Top left coordinates to place font
+    invert (Optional boolean): If True inverts font monochrome color. Default is False
+    landscape (Optional boolean): Rotates letter 90 degrees.  Default is true.
+Returns:
+    int, int: Width and height of the letter in pixels (0,0 if error)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_ae41e8d49a3eeda1c19a64709668c2b88}\label{classst7565_1_1Glcd_ae41e8d49a3eeda1c19a64709668c2b88}} 
+\index{Glcd@{Glcd}!draw\_line@{draw\_line}}
+\index{draw\_line@{draw\_line}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_line()}{draw\_line()}}
+{\footnotesize\ttfamily def draw\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x1,  }\item[{}]{y1,  }\item[{}]{x2,  }\item[{}]{y2,  }\item[{}]{color = {\ttfamily 1},  }\item[{}]{invert = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a line on the back buffer using Bresenham's algorithm
+Args:
+    x1, y1 (int): Starting coordinates of the line
+    x2, y2 (int): Ending coordinates of the line
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+    invert (Optional boolean): Inverts target pixel (overrides color)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_ab7eca64dff6f6fa294686ab51fdfd2dd}\label{classst7565_1_1Glcd_ab7eca64dff6f6fa294686ab51fdfd2dd}} 
+\index{Glcd@{Glcd}!draw\_lines@{draw\_lines}}
+\index{draw\_lines@{draw\_lines}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_lines()}{draw\_lines()}}
+{\footnotesize\ttfamily def draw\+\_\+lines (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{coords,  }\item[{}]{color = {\ttfamily 1},  }\item[{}]{invert = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws multiple lines on the back buffer
+Args:
+    coords (Numpy 2D array dtype=Uint8): Line coordinate x,y pairs per row
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+    invert (Optional boolean): Inverts target pixel (overrides color)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a6644cc1df539645b799d8cbecd273513}\label{classst7565_1_1Glcd_a6644cc1df539645b799d8cbecd273513}} 
+\index{Glcd@{Glcd}!draw\_point@{draw\_point}}
+\index{draw\_point@{draw\_point}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_point()}{draw\_point()}}
+{\footnotesize\ttfamily def draw\+\_\+point (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{color = {\ttfamily 1},  }\item[{}]{invert = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a single point on the back buffer
+Args:
+    x, y (int): Coordinates of point
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+    invert (Optional boolean): Inverts target pixel (overrides color)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a98613ce6e4881335593164d5cd684177}\label{classst7565_1_1Glcd_a98613ce6e4881335593164d5cd684177}} 
+\index{Glcd@{Glcd}!draw\_polygon@{draw\_polygon}}
+\index{draw\_polygon@{draw\_polygon}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_polygon()}{draw\_polygon()}}
+{\footnotesize\ttfamily def draw\+\_\+polygon (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sides,  }\item[{}]{x0,  }\item[{}]{y0,  }\item[{}]{r,  }\item[{}]{rotate = {\ttfamily 0},  }\item[{}]{color = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws an n-sided regular polygon on the back buffer
+Args:
+    sides (int): Number of polygon sides
+    x0, y0 (int): Center point coordinates
+    r (int): Radius
+    rotate (Optional float): Rotation in degrees relative to origin. Default is 0.
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+Note:
+    The center point is the center of the x0,y0 pixel.
+    Since pixels are not divisible, the radius is integer rounded
+    up to complete on a full pixel.  Therefore diameter = 2 x r + 1.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a238f0ddbca6469b3e4963e41bde9ac9a}\label{classst7565_1_1Glcd_a238f0ddbca6469b3e4963e41bde9ac9a}} 
+\index{Glcd@{Glcd}!draw\_rectangle@{draw\_rectangle}}
+\index{draw\_rectangle@{draw\_rectangle}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_rectangle()}{draw\_rectangle()}}
+{\footnotesize\ttfamily def draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x1,  }\item[{}]{y1,  }\item[{}]{w,  }\item[{}]{h,  }\item[{}]{color = {\ttfamily 1},  }\item[{}]{invert = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a rectangle on the back buffer
+Args:
+    x1, y1 (int): Top left coordinates of rectangle
+    w, h (int): Width & height in pixels of rectangle
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+    invert (Optional boolean): Inverts target pixel (overrides color)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a195734f20169ebbf5b3708618458e1ef}\label{classst7565_1_1Glcd_a195734f20169ebbf5b3708618458e1ef}} 
+\index{Glcd@{Glcd}!draw\_string@{draw\_string}}
+\index{draw\_string@{draw\_string}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{draw\_string()}{draw\_string()}}
+{\footnotesize\ttfamily def draw\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text,  }\item[{}]{font,  }\item[{}]{x,  }\item[{}]{y,  }\item[{}]{spacing = {\ttfamily 1},  }\item[{}]{invert = {\ttfamily False},  }\item[{}]{landscape = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a string of text on the back buffer
+Args:
+    text (string): Text
+    font (XglcdFont object): Font
+    x, y (int): Top left coordinates to place font
+    spacing (optonal int): Pixel spacing between letters. Default is 1.
+    invert (optional boolean): If True inverts font monochrome color. Default is False
+    landscape (optional boolean): Rotates text 90 degrees.  Default is true.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a41124d8d851b030e78fda0087147469e}\label{classst7565_1_1Glcd_a41124d8d851b030e78fda0087147469e}} 
+\index{Glcd@{Glcd}!fill\_circle@{fill\_circle}}
+\index{fill\_circle@{fill\_circle}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{fill\_circle()}{fill\_circle()}}
+{\footnotesize\ttfamily def fill\+\_\+circle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x0,  }\item[{}]{y0,  }\item[{}]{r,  }\item[{}]{color = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a filled circle on the back buffer
+Args:
+    x0, y0 (int): Center point coordinates
+    r (int): Radius
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+Note:
+    The center point is the center of the x0,y0 pixel.
+    Since pixels are not divisible, the radius is integer rounded
+    up to complete on a full pixel.  Therefore diameter = 2 x r + 1.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a9fab67648a203b82a1fd03dd7da8b2a2}\label{classst7565_1_1Glcd_a9fab67648a203b82a1fd03dd7da8b2a2}} 
+\index{Glcd@{Glcd}!fill\_ellipse@{fill\_ellipse}}
+\index{fill\_ellipse@{fill\_ellipse}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{fill\_ellipse()}{fill\_ellipse()}}
+{\footnotesize\ttfamily def fill\+\_\+ellipse (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x0,  }\item[{}]{y0,  }\item[{}]{a,  }\item[{}]{b,  }\item[{}]{color = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a filled ellipse on the back buffer
+Args:
+    x0, y0 (int): Pixel coordinates of center point
+    a (int): Semi axis horizontal
+    b (int): Semi axis vertical
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+Note:
+    The center point is the center of the x0,y0 pixel.
+    Since pixels are not divisible, the axes are integer rounded
+    up to complete on a full pixel.  Therefore the major and
+    minor axes are increased by 1.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_ad2ccdf644a088014f653afd17af86f06}\label{classst7565_1_1Glcd_ad2ccdf644a088014f653afd17af86f06}} 
+\index{Glcd@{Glcd}!fill\_polygon@{fill\_polygon}}
+\index{fill\_polygon@{fill\_polygon}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{fill\_polygon()}{fill\_polygon()}}
+{\footnotesize\ttfamily def fill\+\_\+polygon (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sides,  }\item[{}]{x0,  }\item[{}]{y0,  }\item[{}]{r,  }\item[{}]{rotate = {\ttfamily 0},  }\item[{}]{color = {\ttfamily 1},  }\item[{}]{invert = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a filled n-sided regular polygon on the back buffer
+Args:
+    sides (int): Number of polygon sides
+    x0, y0 (int): Center point coordinates
+    r (int): Radius
+    rotate (Optional float): Rotation in degrees relative to origin. Default is 0.
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+    invert (Optional boolean): Inverts target pixel (overrides color)
+Note:
+    The center point is the center of the x0,y0 pixel.
+    Since pixels are not divisible, the radius is integer rounded
+    up to complete on a full pixel.  Therefore diameter = 2 x r + 1.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_afc6f6312ec085bf566952803165fddad}\label{classst7565_1_1Glcd_afc6f6312ec085bf566952803165fddad}} 
+\index{Glcd@{Glcd}!fill\_rectangle@{fill\_rectangle}}
+\index{fill\_rectangle@{fill\_rectangle}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{fill\_rectangle()}{fill\_rectangle()}}
+{\footnotesize\ttfamily def fill\+\_\+rectangle (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x1,  }\item[{}]{y1,  }\item[{}]{w,  }\item[{}]{h,  }\item[{}]{color = {\ttfamily 1},  }\item[{}]{invert = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a filled rectangle on the back buffer
+Args:
+    x1, y1 (int): Top left coordinates of rectangle
+    w, h (int): Width & height in pixels of rectangle
+    color (Optional int): 0 = pixel off, 1 = pixel on (default)
+    invert (Optional boolean): Inverts target pixel (overrides color)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a223dbb87add79364140fb47b5ddb318e}\label{classst7565_1_1Glcd_a223dbb87add79364140fb47b5ddb318e}} 
+\index{Glcd@{Glcd}!flip@{flip}}
+\index{flip@{flip}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{flip()}{flip()}}
+{\footnotesize\ttfamily def flip (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send back buffer to ST7565 display\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a20d534c164e50186b757885079f2994e}\label{classst7565_1_1Glcd_a20d534c164e50186b757885079f2994e}} 
+\index{Glcd@{Glcd}!init@{init}}
+\index{init@{init}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily def init (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_af0034e78fb6aafcf3fad9d211ff786a3}\label{classst7565_1_1Glcd_af0034e78fb6aafcf3fad9d211ff786a3}} 
+\index{Glcd@{Glcd}!is\_off\_grid@{is\_off\_grid}}
+\index{is\_off\_grid@{is\_off\_grid}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{is\_off\_grid()}{is\_off\_grid()}}
+{\footnotesize\ttfamily def is\+\_\+off\+\_\+grid (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{xmin,  }\item[{}]{ymin,  }\item[{}]{xmax,  }\item[{}]{ymax }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if drawing coordinates extends past LCD display boundaries
+Args:
+    xmin (int): Minimum horizontal pixel.
+    ymin (int): Minimum vertical pixel.
+    xmax (int): Maximum horizontal pixel.
+    ymax (int): Maximum vertical pixel.
+Returns:
+    boolean: False = Coordinates OK, True = Error.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_aa7b8434ccecec1d80286e772e08c4df9}\label{classst7565_1_1Glcd_aa7b8434ccecec1d80286e772e08c4df9}} 
+\index{Glcd@{Glcd}!is\_point@{is\_point}}
+\index{is\_point@{is\_point}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{is\_point()}{is\_point()}}
+{\footnotesize\ttfamily def is\+\_\+point (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{y }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determines if coordinates on back buffer has a drawn point
+Args:
+    x, y (int): Coordinates of point
+Returns boolean: True if pixel is drawn.  False is blank.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a2f6cb6618921ba1b2713df14f5a7c903}\label{classst7565_1_1Glcd_a2f6cb6618921ba1b2713df14f5a7c903}} 
+\index{Glcd@{Glcd}!load\_bitmap@{load\_bitmap}}
+\index{load\_bitmap@{load\_bitmap}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{load\_bitmap()}{load\_bitmap()}}
+{\footnotesize\ttfamily def load\+\_\+bitmap (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{width = {\ttfamily \mbox{\hyperlink{classst7565_1_1Glcd_a6764a3cd52e29175aa26ca7049e82a67}{LCD\+\_\+\+WIDTH}}},  }\item[{}]{height = {\ttfamily \mbox{\hyperlink{classst7565_1_1Glcd_a1a72754a3df224f4b21be377c09f7a16}{LCD\+\_\+\+HEIGHT}}},  }\item[{}]{invert = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads a monochrome bitmap (raw format only)
+Args:
+    path (string): full source path of raw bitmap file.
+    width (Optional int): Pixel width of bitmap. Default is LCD width.
+    height (Optional int): Pixel height of bitmap. Default is LCD height.
+    invert (Optional boolan): True inverts monochrome color. Default is false.
+Returns:
+    Numpy 2D array
+Note:
+    You can use the open-source IrfanView graphics program to convert images
+    to 1 bpp raw bitmaps.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a4308ffa8f7ff21f972fcbab392a18d80}\label{classst7565_1_1Glcd_a4308ffa8f7ff21f972fcbab392a18d80}} 
+\index{Glcd@{Glcd}!move\_cursor@{move\_cursor}}
+\index{move\_cursor@{move\_cursor}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{move\_cursor()}{move\_cursor()}}
+{\footnotesize\ttfamily def move\+\_\+cursor (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x,  }\item[{}]{page }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move cursor to specified display position
+Args:
+    x (int):  x column coordinate
+    page (int): page
+Note:
+    X coordinates are 1 based on Adafruit ST7565
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a51829b63adb24ac48d350dee60181002}\label{classst7565_1_1Glcd_a51829b63adb24ac48d350dee60181002}} 
+\index{Glcd@{Glcd}!reset@{reset}}
+\index{reset@{reset}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reset ST7565 display\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a0cc2dd3f3909eef733411e19cd193b93}\label{classst7565_1_1Glcd_a0cc2dd3f3909eef733411e19cd193b93}} 
+\index{Glcd@{Glcd}!reverse\_display@{reverse\_display}}
+\index{reverse\_display@{reverse\_display}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{reverse\_display()}{reverse\_display()}}
+{\footnotesize\ttfamily def reverse\+\_\+display (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{reverse = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reverses the display status on LCD panel without rewriting
+the contents of the display data RAM.
+Args:
+    reverse (Optional boolean): True is reverse.  False is normal.
+Note:
+    Causes unwanted artifacts
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_ad17ab3cf51b12bcfd52191f2c3c98b39}\label{classst7565_1_1Glcd_ad17ab3cf51b12bcfd52191f2c3c98b39}} 
+\index{Glcd@{Glcd}!save\_bitmap@{save\_bitmap}}
+\index{save\_bitmap@{save\_bitmap}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{save\_bitmap()}{save\_bitmap()}}
+{\footnotesize\ttfamily def save\+\_\+bitmap (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{path,  }\item[{}]{x1 = {\ttfamily 0},  }\item[{}]{y1 = {\ttfamily 0},  }\item[{}]{width = {\ttfamily \mbox{\hyperlink{classst7565_1_1Glcd_a6764a3cd52e29175aa26ca7049e82a67}{LCD\+\_\+\+WIDTH}}},  }\item[{}]{height = {\ttfamily \mbox{\hyperlink{classst7565_1_1Glcd_a1a72754a3df224f4b21be377c09f7a16}{LCD\+\_\+\+HEIGHT}}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves buffer or a portion of the buffer to a raw bitmap
+Args:
+    path (string): full target path for raw bitmap file.
+    x1, y1 (Optional int): Top left corner of bitmap.  Default is 0, 0.
+    width (Optional int): Pixel width of bitmap. Default is LCD width.
+    height (Optional int): Pixel height of bitmap. Default is LCD height.
+Note:
+    You can use the open-source IrfanView graphics program to open raw bitmaps.
+    You must know the width & height and the bpp which is 8
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_af66126c7e06108bf0a1ebea41ac4ed1d}\label{classst7565_1_1Glcd_af66126c7e06108bf0a1ebea41ac4ed1d}} 
+\index{Glcd@{Glcd}!send\_command@{send\_command}}
+\index{send\_command@{send\_command}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{send\_command()}{send\_command()}}
+{\footnotesize\ttfamily def send\+\_\+command (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{cmd }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send commands to ST7565
+Args:
+    cmd ([int]):  commands to send
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a80c5a50488b220285f947ca41295e0b4}\label{classst7565_1_1Glcd_a80c5a50488b220285f947ca41295e0b4}} 
+\index{Glcd@{Glcd}!send\_data@{send\_data}}
+\index{send\_data@{send\_data}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{send\_data()}{send\_data()}}
+{\footnotesize\ttfamily def send\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send data to ST7565
+Args:
+    data ([int]):  data to send
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_ab1444b48506c96540e6c560b7de9f9d5}\label{classst7565_1_1Glcd_ab1444b48506c96540e6c560b7de9f9d5}} 
+\index{Glcd@{Glcd}!set\_backlight\_color@{set\_backlight\_color}}
+\index{set\_backlight\_color@{set\_backlight\_color}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{set\_backlight\_color()}{set\_backlight\_color()}}
+{\footnotesize\ttfamily def set\+\_\+backlight\+\_\+color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{r,  }\item[{}]{g,  }\item[{}]{b }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set LED backlight color
+Args:
+    r (int): red duty cycle 0 - 100 (0 = off, 100 = full on)
+    g (int): green duty cycle 0 - 100 (0 = off, 100 = full on)
+    b (int): blue duty cycle 0 - 100 (0 = off, 100 = full on)
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a40c12e5eaa8432edc8d5aef2a39a3842}\label{classst7565_1_1Glcd_a40c12e5eaa8432edc8d5aef2a39a3842}} 
+\index{Glcd@{Glcd}!set\_contrast@{set\_contrast}}
+\index{set\_contrast@{set\_contrast}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{set\_contrast()}{set\_contrast()}}
+{\footnotesize\ttfamily def set\+\_\+contrast (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{level }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set contrast
+Args:
+    level (int): contrast level  0 - 255
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_a858eab8e49fff52a022cc08bbeaf30dc}\label{classst7565_1_1Glcd_a858eab8e49fff52a022cc08bbeaf30dc}} 
+\index{Glcd@{Glcd}!sleep@{sleep}}
+\index{sleep@{sleep}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily def sleep (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put ST7565 display in sleep mode\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_af65f43453953dca33bde59bff48beeb6}\label{classst7565_1_1Glcd_af65f43453953dca33bde59bff48beeb6}} 
+\index{Glcd@{Glcd}!standby@{standby}}
+\index{standby@{standby}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{standby()}{standby()}}
+{\footnotesize\ttfamily def standby (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{exit = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Put ST7565 in standby mode
+Args:
+    exit (Optional boolean): True to exit standby, Default is false and enters standby.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classst7565_1_1Glcd_aa3876d9aefb1d0f2b11772a7baea5a2e}\label{classst7565_1_1Glcd_aa3876d9aefb1d0f2b11772a7baea5a2e}} 
+\index{Glcd@{Glcd}!wake@{wake}}
+\index{wake@{wake}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{wake()}{wake()}}
+{\footnotesize\ttfamily def wake (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wake up ST7565 display from sleed mode\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classst7565_1_1Glcd_a14b993520fb1a59ba6af8d3a6943854b}\label{classst7565_1_1Glcd_a14b993520fb1a59ba6af8d3a6943854b}} 
+\index{Glcd@{Glcd}!a0@{a0}}
+\index{a0@{a0}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{a0}{a0}}
+{\footnotesize\ttfamily a0}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a4a87e8f1bce825a57a0fa95c9d467afc}\label{classst7565_1_1Glcd_a4a87e8f1bce825a57a0fa95c9d467afc}} 
+\index{Glcd@{Glcd}!back\_buffer@{back\_buffer}}
+\index{back\_buffer@{back\_buffer}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{back\_buffer}{back\_buffer}}
+{\footnotesize\ttfamily back\+\_\+buffer}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a2f1b0a7ffa6db4743db6862a8e6eff8f}\label{classst7565_1_1Glcd_a2f1b0a7ffa6db4743db6862a8e6eff8f}} 
+\index{Glcd@{Glcd}!BACKLIGHT\_PWM\_FREQUENCY@{BACKLIGHT\_PWM\_FREQUENCY}}
+\index{BACKLIGHT\_PWM\_FREQUENCY@{BACKLIGHT\_PWM\_FREQUENCY}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{BACKLIGHT\_PWM\_FREQUENCY}{BACKLIGHT\_PWM\_FREQUENCY}}
+{\footnotesize\ttfamily int BACKLIGHT\+\_\+\+PWM\+\_\+\+FREQUENCY = 100\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_aa6074166cc77c18081343a82d3af99bf}\label{classst7565_1_1Glcd_aa6074166cc77c18081343a82d3af99bf}} 
+\index{Glcd@{Glcd}!blue@{blue}}
+\index{blue@{blue}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{blue}{blue}}
+{\footnotesize\ttfamily blue}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_abd9f9d74d964d9dd5bce97844621527e}\label{classst7565_1_1Glcd_abd9f9d74d964d9dd5bce97844621527e}} 
+\index{Glcd@{Glcd}!CMD\_DISPLAY\_OFF@{CMD\_DISPLAY\_OFF}}
+\index{CMD\_DISPLAY\_OFF@{CMD\_DISPLAY\_OFF}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_DISPLAY\_OFF}{CMD\_DISPLAY\_OFF}}
+{\footnotesize\ttfamily int CMD\+\_\+\+DISPLAY\+\_\+\+OFF = 0x\+AE\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a425cfc005060bb21ccb1a10f77db22fe}\label{classst7565_1_1Glcd_a425cfc005060bb21ccb1a10f77db22fe}} 
+\index{Glcd@{Glcd}!CMD\_DISPLAY\_ON@{CMD\_DISPLAY\_ON}}
+\index{CMD\_DISPLAY\_ON@{CMD\_DISPLAY\_ON}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_DISPLAY\_ON}{CMD\_DISPLAY\_ON}}
+{\footnotesize\ttfamily int CMD\+\_\+\+DISPLAY\+\_\+\+ON = 0x\+AF\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ac1dd879e72bd79fabc324b7f81b1db15}\label{classst7565_1_1Glcd_ac1dd879e72bd79fabc324b7f81b1db15}} 
+\index{Glcd@{Glcd}!CMD\_INTERNAL\_RESET@{CMD\_INTERNAL\_RESET}}
+\index{CMD\_INTERNAL\_RESET@{CMD\_INTERNAL\_RESET}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_INTERNAL\_RESET}{CMD\_INTERNAL\_RESET}}
+{\footnotesize\ttfamily int CMD\+\_\+\+INTERNAL\+\_\+\+RESET = 0x\+E2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a94fef7b0b412f19b1850448a419a8169}\label{classst7565_1_1Glcd_a94fef7b0b412f19b1850448a419a8169}} 
+\index{Glcd@{Glcd}!CMD\_SET\_ADC\_NORMAL@{CMD\_SET\_ADC\_NORMAL}}
+\index{CMD\_SET\_ADC\_NORMAL@{CMD\_SET\_ADC\_NORMAL}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_ADC\_NORMAL}{CMD\_SET\_ADC\_NORMAL}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+ADC\+\_\+\+NORMAL = 0x\+A0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a027dbe8e59638c61ea9c48b64aa7a04a}\label{classst7565_1_1Glcd_a027dbe8e59638c61ea9c48b64aa7a04a}} 
+\index{Glcd@{Glcd}!CMD\_SET\_ADC\_REVERSE@{CMD\_SET\_ADC\_REVERSE}}
+\index{CMD\_SET\_ADC\_REVERSE@{CMD\_SET\_ADC\_REVERSE}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_ADC\_REVERSE}{CMD\_SET\_ADC\_REVERSE}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+ADC\+\_\+\+REVERSE = 0x\+A1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a10af89ce1cea51f6a6d4718b5403e855}\label{classst7565_1_1Glcd_a10af89ce1cea51f6a6d4718b5403e855}} 
+\index{Glcd@{Glcd}!CMD\_SET\_ALLPTS\_NORMAL@{CMD\_SET\_ALLPTS\_NORMAL}}
+\index{CMD\_SET\_ALLPTS\_NORMAL@{CMD\_SET\_ALLPTS\_NORMAL}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_ALLPTS\_NORMAL}{CMD\_SET\_ALLPTS\_NORMAL}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+ALLPTS\+\_\+\+NORMAL = 0x\+A4\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a4a466051b7684707fcd1cb67e0040594}\label{classst7565_1_1Glcd_a4a466051b7684707fcd1cb67e0040594}} 
+\index{Glcd@{Glcd}!CMD\_SET\_ALLPTS\_ON@{CMD\_SET\_ALLPTS\_ON}}
+\index{CMD\_SET\_ALLPTS\_ON@{CMD\_SET\_ALLPTS\_ON}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_ALLPTS\_ON}{CMD\_SET\_ALLPTS\_ON}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+ALLPTS\+\_\+\+ON = 0x\+A5\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ab83f6d4f852fcbec5e5a31a4ef034926}\label{classst7565_1_1Glcd_ab83f6d4f852fcbec5e5a31a4ef034926}} 
+\index{Glcd@{Glcd}!CMD\_SET\_BIAS\_7@{CMD\_SET\_BIAS\_7}}
+\index{CMD\_SET\_BIAS\_7@{CMD\_SET\_BIAS\_7}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_BIAS\_7}{CMD\_SET\_BIAS\_7}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+BIAS\+\_\+7 = 0x\+A3\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ac9e31815eeab81bbfedaa6a7acf5ff84}\label{classst7565_1_1Glcd_ac9e31815eeab81bbfedaa6a7acf5ff84}} 
+\index{Glcd@{Glcd}!CMD\_SET\_BIAS\_9@{CMD\_SET\_BIAS\_9}}
+\index{CMD\_SET\_BIAS\_9@{CMD\_SET\_BIAS\_9}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_BIAS\_9}{CMD\_SET\_BIAS\_9}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+BIAS\+\_\+9 = 0x\+A2\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_aaa13b95290084ac43b7feec33939d3de}\label{classst7565_1_1Glcd_aaa13b95290084ac43b7feec33939d3de}} 
+\index{Glcd@{Glcd}!CMD\_SET\_COLUMN\_LOWER@{CMD\_SET\_COLUMN\_LOWER}}
+\index{CMD\_SET\_COLUMN\_LOWER@{CMD\_SET\_COLUMN\_LOWER}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_COLUMN\_LOWER}{CMD\_SET\_COLUMN\_LOWER}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+COLUMN\+\_\+\+LOWER = 0x00\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ad80ef8044201a74f6dfe7c0f8c8df5d6}\label{classst7565_1_1Glcd_ad80ef8044201a74f6dfe7c0f8c8df5d6}} 
+\index{Glcd@{Glcd}!CMD\_SET\_COLUMN\_UPPER@{CMD\_SET\_COLUMN\_UPPER}}
+\index{CMD\_SET\_COLUMN\_UPPER@{CMD\_SET\_COLUMN\_UPPER}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_COLUMN\_UPPER}{CMD\_SET\_COLUMN\_UPPER}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+COLUMN\+\_\+\+UPPER = 0x10\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a57384de778f1458701e80cb378d3ac21}\label{classst7565_1_1Glcd_a57384de778f1458701e80cb378d3ac21}} 
+\index{Glcd@{Glcd}!CMD\_SET\_COM\_NORMAL@{CMD\_SET\_COM\_NORMAL}}
+\index{CMD\_SET\_COM\_NORMAL@{CMD\_SET\_COM\_NORMAL}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_COM\_NORMAL}{CMD\_SET\_COM\_NORMAL}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+COM\+\_\+\+NORMAL = 0x\+C0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ad0055dd2f9d2737b4b94a6455f406901}\label{classst7565_1_1Glcd_ad0055dd2f9d2737b4b94a6455f406901}} 
+\index{Glcd@{Glcd}!CMD\_SET\_COM\_REVERSE@{CMD\_SET\_COM\_REVERSE}}
+\index{CMD\_SET\_COM\_REVERSE@{CMD\_SET\_COM\_REVERSE}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_COM\_REVERSE}{CMD\_SET\_COM\_REVERSE}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+COM\+\_\+\+REVERSE = 0x\+C8\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a43133db2cdeff4a878920a36a44f7d2a}\label{classst7565_1_1Glcd_a43133db2cdeff4a878920a36a44f7d2a}} 
+\index{Glcd@{Glcd}!CMD\_SET\_DISP\_NORMAL@{CMD\_SET\_DISP\_NORMAL}}
+\index{CMD\_SET\_DISP\_NORMAL@{CMD\_SET\_DISP\_NORMAL}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_DISP\_NORMAL}{CMD\_SET\_DISP\_NORMAL}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+DISP\+\_\+\+NORMAL = 0x\+A6\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a288b0fdf393fe70b3b7a37d394124edb}\label{classst7565_1_1Glcd_a288b0fdf393fe70b3b7a37d394124edb}} 
+\index{Glcd@{Glcd}!CMD\_SET\_DISP\_REVERSE@{CMD\_SET\_DISP\_REVERSE}}
+\index{CMD\_SET\_DISP\_REVERSE@{CMD\_SET\_DISP\_REVERSE}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_DISP\_REVERSE}{CMD\_SET\_DISP\_REVERSE}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+DISP\+\_\+\+REVERSE = 0x\+A7\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ae5e75338c16a7c942a7a936a8d144741}\label{classst7565_1_1Glcd_ae5e75338c16a7c942a7a936a8d144741}} 
+\index{Glcd@{Glcd}!CMD\_SET\_DISP\_START\_LINE@{CMD\_SET\_DISP\_START\_LINE}}
+\index{CMD\_SET\_DISP\_START\_LINE@{CMD\_SET\_DISP\_START\_LINE}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_DISP\_START\_LINE}{CMD\_SET\_DISP\_START\_LINE}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+DISP\+\_\+\+START\+\_\+\+LINE = 0x40\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a0563262cb690e34771b424428e920278}\label{classst7565_1_1Glcd_a0563262cb690e34771b424428e920278}} 
+\index{Glcd@{Glcd}!CMD\_SET\_PAGE@{CMD\_SET\_PAGE}}
+\index{CMD\_SET\_PAGE@{CMD\_SET\_PAGE}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_PAGE}{CMD\_SET\_PAGE}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+PAGE = 0x\+B0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_abedbcf3068c0aa54f9905a7d94910cbb}\label{classst7565_1_1Glcd_abedbcf3068c0aa54f9905a7d94910cbb}} 
+\index{Glcd@{Glcd}!CMD\_SET\_POWER\_CONTROL@{CMD\_SET\_POWER\_CONTROL}}
+\index{CMD\_SET\_POWER\_CONTROL@{CMD\_SET\_POWER\_CONTROL}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_POWER\_CONTROL}{CMD\_SET\_POWER\_CONTROL}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+POWER\+\_\+\+CONTROL = 0x28\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a48d272f9d9971a09664e2c9df0e6873a}\label{classst7565_1_1Glcd_a48d272f9d9971a09664e2c9df0e6873a}} 
+\index{Glcd@{Glcd}!CMD\_SET\_RESISTOR\_RATIO@{CMD\_SET\_RESISTOR\_RATIO}}
+\index{CMD\_SET\_RESISTOR\_RATIO@{CMD\_SET\_RESISTOR\_RATIO}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_RESISTOR\_RATIO}{CMD\_SET\_RESISTOR\_RATIO}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+RESISTOR\+\_\+\+RATIO = 0x20\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_aeb4011cf9dad5417edad8269ce8b5f07}\label{classst7565_1_1Glcd_aeb4011cf9dad5417edad8269ce8b5f07}} 
+\index{Glcd@{Glcd}!CMD\_SET\_STATIC\_OFF@{CMD\_SET\_STATIC\_OFF}}
+\index{CMD\_SET\_STATIC\_OFF@{CMD\_SET\_STATIC\_OFF}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_STATIC\_OFF}{CMD\_SET\_STATIC\_OFF}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+STATIC\+\_\+\+OFF = 0x\+AC\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a09cb62319bea0c5a6d6d3731658cd0fe}\label{classst7565_1_1Glcd_a09cb62319bea0c5a6d6d3731658cd0fe}} 
+\index{Glcd@{Glcd}!CMD\_SET\_STATIC\_ON@{CMD\_SET\_STATIC\_ON}}
+\index{CMD\_SET\_STATIC\_ON@{CMD\_SET\_STATIC\_ON}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_STATIC\_ON}{CMD\_SET\_STATIC\_ON}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+STATIC\+\_\+\+ON = 0x\+AD\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a3c264254dfcabff1eef4956711a57d45}\label{classst7565_1_1Glcd_a3c264254dfcabff1eef4956711a57d45}} 
+\index{Glcd@{Glcd}!CMD\_SET\_STATIC\_REG@{CMD\_SET\_STATIC\_REG}}
+\index{CMD\_SET\_STATIC\_REG@{CMD\_SET\_STATIC\_REG}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_STATIC\_REG}{CMD\_SET\_STATIC\_REG}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+STATIC\+\_\+\+REG = 0x00\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a664d9296bbc6bbbaaef24303cb47a003}\label{classst7565_1_1Glcd_a664d9296bbc6bbbaaef24303cb47a003}} 
+\index{Glcd@{Glcd}!CMD\_SET\_VOLUME\_FIRST@{CMD\_SET\_VOLUME\_FIRST}}
+\index{CMD\_SET\_VOLUME\_FIRST@{CMD\_SET\_VOLUME\_FIRST}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_VOLUME\_FIRST}{CMD\_SET\_VOLUME\_FIRST}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+VOLUME\+\_\+\+FIRST = 0x81\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a90c434469efc6da48fc1ae8dbdf458c4}\label{classst7565_1_1Glcd_a90c434469efc6da48fc1ae8dbdf458c4}} 
+\index{Glcd@{Glcd}!CMD\_SET\_VOLUME\_SECOND@{CMD\_SET\_VOLUME\_SECOND}}
+\index{CMD\_SET\_VOLUME\_SECOND@{CMD\_SET\_VOLUME\_SECOND}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{CMD\_SET\_VOLUME\_SECOND}{CMD\_SET\_VOLUME\_SECOND}}
+{\footnotesize\ttfamily int CMD\+\_\+\+SET\+\_\+\+VOLUME\+\_\+\+SECOND = 0x00\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ac071bd38e4c31ed73ec02faa32b52e4a}\label{classst7565_1_1Glcd_ac071bd38e4c31ed73ec02faa32b52e4a}} 
+\index{Glcd@{Glcd}!cs@{cs}}
+\index{cs@{cs}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{cs}{cs}}
+{\footnotesize\ttfamily cs}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_ad83fb941855ba7c4aa2bb65245437777}\label{classst7565_1_1Glcd_ad83fb941855ba7c4aa2bb65245437777}} 
+\index{Glcd@{Glcd}!green@{green}}
+\index{green@{green}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{green}{green}}
+{\footnotesize\ttfamily green}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a1ce69225827313c4e48e5d2fdc031e8c}\label{classst7565_1_1Glcd_a1ce69225827313c4e48e5d2fdc031e8c}} 
+\index{Glcd@{Glcd}!LCD\_CONTRAST@{LCD\_CONTRAST}}
+\index{LCD\_CONTRAST@{LCD\_CONTRAST}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{LCD\_CONTRAST}{LCD\_CONTRAST}}
+{\footnotesize\ttfamily int LCD\+\_\+\+CONTRAST = 0x19\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a1a72754a3df224f4b21be377c09f7a16}\label{classst7565_1_1Glcd_a1a72754a3df224f4b21be377c09f7a16}} 
+\index{Glcd@{Glcd}!LCD\_HEIGHT@{LCD\_HEIGHT}}
+\index{LCD\_HEIGHT@{LCD\_HEIGHT}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{LCD\_HEIGHT}{LCD\_HEIGHT}}
+{\footnotesize\ttfamily int LCD\+\_\+\+HEIGHT = 64\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a2710eb1315534fcb91d5908278e6cead}\label{classst7565_1_1Glcd_a2710eb1315534fcb91d5908278e6cead}} 
+\index{Glcd@{Glcd}!LCD\_PAGE\_COUNT@{LCD\_PAGE\_COUNT}}
+\index{LCD\_PAGE\_COUNT@{LCD\_PAGE\_COUNT}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{LCD\_PAGE\_COUNT}{LCD\_PAGE\_COUNT}}
+{\footnotesize\ttfamily int LCD\+\_\+\+PAGE\+\_\+\+COUNT = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a6764a3cd52e29175aa26ca7049e82a67}\label{classst7565_1_1Glcd_a6764a3cd52e29175aa26ca7049e82a67}} 
+\index{Glcd@{Glcd}!LCD\_WIDTH@{LCD\_WIDTH}}
+\index{LCD\_WIDTH@{LCD\_WIDTH}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{LCD\_WIDTH}{LCD\_WIDTH}}
+{\footnotesize\ttfamily int LCD\+\_\+\+WIDTH = 128\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_a42c3a4a0281e61ee592e36a3eda020f2}\label{classst7565_1_1Glcd_a42c3a4a0281e61ee592e36a3eda020f2}} 
+\index{Glcd@{Glcd}!red@{red}}
+\index{red@{red}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{red}{red}}
+{\footnotesize\ttfamily red}
+
+\mbox{\Hypertarget{classst7565_1_1Glcd_aa7160831f90c30e542484d4419692d23}\label{classst7565_1_1Glcd_aa7160831f90c30e542484d4419692d23}} 
+\index{Glcd@{Glcd}!rst@{rst}}
+\index{rst@{rst}!Glcd@{Glcd}}
+\doxysubsubsection{\texorpdfstring{rst}{rst}}
+{\footnotesize\ttfamily rst}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+software/\mbox{\hyperlink{st7565_8py}{st7565.\+py}}\end{DoxyCompactItemize}
