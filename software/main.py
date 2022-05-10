@@ -7,12 +7,15 @@ from alarm import Alarm
 from buttons import Buttons
 from menu import Menu
 from clock import clock
+from stopwatch import stopwatch
+from timer import timer_function
 import time
 import threading
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request
 import subprocess
 import pickle
+import global_variable
 
 """
 GLOBAL VARIABLES
@@ -24,27 +27,25 @@ button_down_pin = 21
 button_left_pin = 12
 button_right_pin = 16
 #####OBJECTS#####
-alarm = None
-buttons = None
-menu = None
+
 app = Flask(__name__)
 to_do_list = {0:"Sporten", 1:"Eten", 2:"Slapen", 3:"Gamen"}
 ####################
 
 def main():
-    global buttons
-    global menu
-    
-    button_state = None
     
     init()
+    
+    button_state = None
+    buttons = global_variable.buttons
+    menu = global_variable.menu
     
     while True:
         clock()
         button_state = buttons.poll()
         if(button_state["UP"] or button_state["DOWN"] or button_state["LEFT"] or button_state["RIGHT"]):
             buttons.wait_released()
-            menu_function(menu)
+            menu_function(menu, buttons)
 
     
 
@@ -64,22 +65,20 @@ def init():
     global button_down_pin
     global button_left_pin
     global button_right_pin
-    global alarm
-    global buttons
-    global menu
+
     
     
-    buttons = Buttons(button_up_pin, button_down_pin, button_left_pin, button_right_pin)
-    buttons.init()
+    global_variable.buttons = Buttons(button_up_pin, button_down_pin, button_left_pin, button_right_pin)
+    global_variable.buttons.init()
     
-    alarm = Alarm(alarm_pin)
-    alarm.init()
+    global_variable.alarm = Alarm(alarm_pin)
+    global_variable.alarm.init()
     
-    menu = Menu(5)
-    menu.add_function("Timer", None)
-    menu.add_function("Stopwatch", None)
-    menu.add_function("To do", None)
-    menu.add_function("show ip", None)
+    global_variable.menu = Menu(5)
+    global_variable.menu.add_function("Timer", timer_function)
+    global_variable.menu.add_function("Stopwatch", stopwatch)
+    global_variable.menu.add_function("To do", None)
+    global_variable.menu.add_function("show ip", show_ip)
     
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
@@ -87,7 +86,7 @@ def init():
     "Setup webserver"
     threading.Thread(target=lambda: app.run(host=get_ip(), port=80, debug=True, use_reloader=False)).start()
 
-def menu_function(menu_object, timeout = 5):
+def menu_function(menu_object, buttons, timeout = 5):
     """
     Show the menu.
     If no buttons are pressed within the timeout, the function will return
@@ -99,7 +98,7 @@ def menu_function(menu_object, timeout = 5):
     None.
 
     """
-    global buttons
+
     start_time = time.time()
     stop_time = None
     
@@ -144,6 +143,33 @@ def get_ip():
     temp = temp.strip('\\n\'')
     return temp
 
+def show_ip():
+    """
+    Shows a screen with the IP address of the RPI
+    Screen will return if pressed on any button 
+
+    Returns
+    -------
+    None.
+
+    """
+    
+    buttons = global_variable.buttons
+    status = None
+    
+    write(0, 0, "") #clears the display
+    
+    write_buffer(0, 0, "The IP address is:")
+    write_buffer(0, 1, get_ip())
+    send_buffer()
+    
+    #wait until button is pressed
+    while True:
+        status = buttons.poll()
+        if(status["LEFT"] or status["RIGHT"] or status["UP"] or status["DOWN"]):
+            buttons.wait_released()
+            return
+    
 
 @app.route('/')
 def index():
