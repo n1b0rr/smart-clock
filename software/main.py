@@ -9,6 +9,7 @@ from menu import Menu
 from clock import clock
 from stopwatch import stopwatch
 from timer import timer_function
+from to_do import show_to_do_list
 import time
 import threading
 import RPi.GPIO as GPIO
@@ -77,7 +78,7 @@ def init():
     global_variable.menu = Menu(5)
     global_variable.menu.add_function("Timer", timer_function)
     global_variable.menu.add_function("Stopwatch", stopwatch)
-    global_variable.menu.add_function("To do", None)
+    global_variable.menu.add_function("To do", show_to_do_list)
     global_variable.menu.add_function("show ip", show_ip)
     
     GPIO.setwarnings(False)
