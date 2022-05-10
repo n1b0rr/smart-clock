@@ -31,6 +31,13 @@ to_do_list = {0: "douchen", 1: "Eten", 2: "Gamen", 3: "studeren"}
 x = 0
 
 def render():
+    """ 
+    Display to do's to the display.
+
+    Returns
+    -------
+    None.
+    """
     with open('todolist.bin', 'rb') as f:
         to_do_list = pickle.load(f)
 
@@ -43,6 +50,13 @@ def render():
 
 
 def remove():
+    """ 
+    Remove an entry from the display
+
+    Returns
+    -------
+    None.
+    """
     global x
     if(len(to_do_list) > 0):
         to_do_list.pop(list(to_do_list)[x])
@@ -75,6 +89,8 @@ def init():
 
     x = 0
 
+    with open('todolist.bin', 'wb') as f:
+        pickle.dump(to_do_list, f)
 
     with open('todolist.bin', 'rb') as f:
         to_do_list = pickle.load(f)
@@ -85,10 +101,7 @@ def init():
 
 def menu_function(menu_object, timeout = 5):
     """
-    Show the menu.
-    If no buttons are pressed within the timeout, the function will return
-    
-    timeout variable is in seconds
+    Show the to do list.
     
     Returns
     -------

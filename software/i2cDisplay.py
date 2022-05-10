@@ -6,7 +6,7 @@ from board import SCL, SDA
 import busio
 import adafruit_ssd1306
 
-# library for making images, to display
+# library for making images
 from PIL import Image, ImageDraw, ImageFont, GifImagePlugin
 
 
@@ -27,7 +27,13 @@ image = Image.new("1", (width, height), color=0)
 clear = Image.new("1", (width, height), color=0)
 
 def write(x, y, ctx):
-    
+    """ 
+    Write to the display directly.
+
+    Returns
+    -------
+    None.
+    """
     
     draw = ImageDraw.Draw(image, "1")
     draw.rectangle((width, height,0,0), fill=(0))
@@ -35,18 +41,28 @@ def write(x, y, ctx):
     disp.image(image)
     disp.show()
 
-#Make write_buffer() and send_buffer()
 def write_buffer(x, y, ctx):
+    """
+    Write things to a buffer to send it to the display after. 
+
+    Returns
+    -------
+    None.
+    """
     try:
         draw.text((x*6,y*12), ctx, font=font, fill=255)
     except:
         draw = ImageDraw.Draw(image, "1")
         draw.text((x*6,y*12), ctx, font=font, fill=255)
-#def write_buffer(x, y, ctx): 
-#    draw = ImageDraw.Draw(image, "1")
-#    draw.text((x,y*12), ctx, font=font, fill=255)
 
 def send_buffer():
+    """ 
+    Send buffer to display.
+
+    Returns
+    -------
+    None.
+    """
     disp.image(image)
     disp.show()
     draw = ImageDraw.Draw(image, "1")

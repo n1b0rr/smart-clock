@@ -18,27 +18,17 @@ alarm_enabled = False
 
 while True:
     status = buttons.poll()
-    if(status["UP"]):
-        if(status["DOWN"]):
-            if(timer_active):
-                print("timer stopped")
-                timer_active = False
-            else:
-                backup = timer
-                print("timer started")
-                timer_active = True
-                start_time = time.time()
+    if(status["UP"] and status["DOWN"]):
+        if(timer_active):
+            print("timer stopped")
+            timer_active = False
+        else:
+            backup = timer
+            print("timer started")
+            timer_active = True
+            start_time = time.time()
         timer += 60
     if(status["DOWN"]):
-
-        #if(status["UP"]):
-           # if(timer_active):
-           #     print("timer stopped")
-           #     timer_active = False
-           # else:
-           #     print("timer started")
-           #     timer_active = True
-           #     start_time = time.time()
 
         timer -= 60
     if(timer_active):
