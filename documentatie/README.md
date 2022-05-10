@@ -1,7 +1,7 @@
-Names: Qinkipa, Robin, Nasser
+Names: Robin, Nasser
 # functions
 
-- Display and alarm functions (Nasser)
+- Display and alarm functions
 	- 12-hour display function for time
 	- 24-hour display function for time
 	- set alarm AM/PM mode
@@ -13,7 +13,7 @@ Names: Qinkipa, Robin, Nasser
 	- draw string
 	- clear screen
 	
-- Alarm peripherals (Nasser)
+- Alarm peripherals
 	- enable display flashing
 	- disable display flashing
 	- enable buzzer
@@ -27,20 +27,20 @@ Names: Qinkipa, Robin, Nasser
 	- Weather
 		+ menu
 		+ poll weather
-	- RSS feed (Nasser)
+	- RSS feed
 		+ menu
 		+ poll feed
-	- Timer (Robin)
+	- Timer
 		+ set time
 		+ start timer
 		+ stop timer
 		+ reset timer
-	- Stop Watch (Robin)
+	- Stop Watch
 		+ start
 		+ stop
 		+ reset
 
--	System functions (Robin)
+-	System functions
 	+	Get time
 	+	Get ip
 	+	Receive_and_process_data_website
