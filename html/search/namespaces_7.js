@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['test_184',['test',['../namespacetest.html',1,'']]],
-  ['testing_185',['testing',['../namespacetesting.html',1,'']]],
-  ['timer_186',['timer',['../namespacetimer.html',1,'']]],
-  ['to_5fdo_187',['to_do',['../namespaceto__do.html',1,'']]]
+  ['spidisplay_175',['spiDisplay',['../namespacespiDisplay.html',1,'']]],
+  ['st7565_176',['st7565',['../namespacest7565.html',1,'']]],
+  ['stats_177',['stats',['../namespacestats.html',1,'']]],
+  ['stopwatch_178',['stopwatch',['../namespacestopwatch.html',1,'']]]
 ];

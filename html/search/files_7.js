@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['test_2epy_200',['test.py',['../test_8py.html',1,'']]],
-  ['testing_2epy_201',['testing.py',['../testing_8py.html',1,'']]],
-  ['timer_2epy_202',['timer.py',['../timer_8py.html',1,'']]],
-  ['to_5fdo_2epy_203',['to_do.py',['../to__do_8py.html',1,'']]]
+  ['spidisplay_2epy_192',['spiDisplay.py',['../spiDisplay_8py.html',1,'']]],
+  ['st7565_2epy_193',['st7565.py',['../st7565_8py.html',1,'']]],
+  ['stats_2epy_194',['stats.py',['../stats_8py.html',1,'']]],
+  ['stopwatch_2epy_195',['stopwatch.py',['../stopwatch_8py.html',1,'']]]
 ];

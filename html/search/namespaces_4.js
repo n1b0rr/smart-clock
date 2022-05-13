@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['i2cdisplay_177',['i2cDisplay',['../namespacei2cDisplay.html',1,'']]]
+  ['hardware_5finit_171',['hardware_init',['../namespacehardware__init.html',1,'']]]
 ];
