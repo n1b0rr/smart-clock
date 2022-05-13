@@ -62,8 +62,6 @@ def show_to_do_list():
     
     x = 0
 
-    with open('todolist.bin', 'wb') as f:
-        pickle.dump(global_variable.to_do_list, f)
 
     with open('todolist.bin', 'rb') as f:
         global_variable.to_do_list = pickle.load(f)
