@@ -6,6 +6,7 @@ import unittest
 class TestRemoveToDo(unittest.TestCase):
 
     def test_0(self):
+        global_variable.to_do_list = {0: "douchen", 1: "Eten", 2: "Gamen", 3: "studeren"}
         self.assertEqual(remove(0), {1: 'Eten', 2: 'Gamen', 3: 'studeren'})
         global_variable.to_do_list = {0: "douchen", 1: "Eten", 2: "Gamen", 3: "studeren"}
 
