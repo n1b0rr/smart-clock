@@ -11,7 +11,7 @@ from stopwatch import stopwatch
 from timer import timer_function
 from to_do import show_to_do_list
 import time
-import threading
+from threading import Lock, Thread
 import RPi.GPIO as GPIO
 from flask import Flask, render_template, request
 import subprocess
@@ -30,7 +30,7 @@ button_right_pin = 16
 #####OBJECTS#####
 
 app = Flask(__name__)
-to_do_list = {0:"Sporten", 1:"Eten", 2:"Slapen", 3:"Gamen"}
+
 ####################
 
 def main():
@@ -84,8 +84,14 @@ def init():
     GPIO.setwarnings(False)
     GPIO.setmode(GPIO.BCM)
 
+    #loads to do list to memory
+    with open('todolist.bin', 'rb') as f:
+        global_variable.to_do_list = pickle.load(f)
+    
+    global_variable.lock = Lock()   #lock variable to lock the to_do_list to prevent race condition
+
     "Setup webserver"
-    threading.Thread(target=lambda: app.run(host=get_ip(), port=80, debug=True, use_reloader=False)).start()
+    Thread(target=lambda: app.run(host=get_ip(), port=80, debug=True, use_reloader=False)).start()
 
 def menu_function(menu_object, buttons, timeout = 5):
     """
@@ -195,8 +201,7 @@ def receive():
     To do list in JSON format 
 
     """
-    global to_do_list
-    return to_do_list
+    return global_variable.to_do_list
     
 @app.route('/send', methods=['POST'])
 def send():
@@ -205,23 +210,34 @@ def send():
 
     Returns
     -------
-    Succeed page on good data, else an error page on bad data
+    200
 
     """
-    global to_do_list
+
     data = request.get_json()
-    
+
     for x in data:
         print("POST request handeling: " + x)
     
+    global_variable.lock.acquire()  #locks the to_do_list for other functions
+    global_variable.to_do_list.clear()
     
-    try:
-        assert type(data) == dict, "to_do_list variable must be a dictionary!"
-        to_do_list = data
-        return "GOOD"
-    except:
-        return "BAD"
+    it = 0
+    for x in data:
+        global_variable.to_do_list.update({it : x})
+        it += 1
     
+    
+    print("New to_do_list is: ")
+    print(global_variable.to_do_list)
+    
+    #write to do list to bin file
+    with open('todolist.bin', 'wb') as f:
+        pickle.dump(global_variable.to_do_list, f)
+    
+    global_variable.lock.release()  #unlocks the to_do_list
+    
+    return "200"
         
 def entry():
     try:
