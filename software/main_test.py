@@ -1,5 +1,6 @@
 import global_variable_test as global_variable
 from to_do import *
+from menu import Menu
 import unittest
 
 
@@ -31,11 +32,18 @@ class TestRemoveToDo(unittest.TestCase):
         self.assertEqual(remove("0"), 3)
     
     
+class TestMenu(unittest.TestCase):
+    def test_add_function(self):
+        pass
     
+    def test_delete_function(self):
+        pass
     
-    
+    def test_up(self):
+        pass
 
-
+    def test_down(self):
+        pass
 
 if __name__ == '__main__':
     unittest.main()

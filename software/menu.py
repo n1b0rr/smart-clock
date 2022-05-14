@@ -15,22 +15,41 @@ class Menu:
     def add_function(self,name,function_reference):
         """
         Add a function to the menu
+
+        Returns
+        -------
+        Dictionary of functions
+
         """
         self.__functions[name] = function_reference
+        return self.__functions[name]
     
     def delete_function(self,name):
         """
-        Delete a function from the menu and resets the cursor
+        Deletes a function from the menu
+
+        Returns
+        -------
+        Dictionary of functions
+
         """
         self.__functions.pop(name)
         self.__current_position = 0
         self.__start_draw_from = 0
         self.__scroll_detect = 0
+        return self.__functions
         
     def up(self):
         """
         Move the cursor up
+
+        Returns
+        -------
+        Cursor position
+
         """
+       
+        
         if(self.__current_position):
             self.__current_position -= 1
             
@@ -40,9 +59,16 @@ class Menu:
                 self.__scroll_detect = 0
                 self.__start_draw_from -= 1
         
+        return self.__current_position
+        
     def down(self):
         """
         Move the cursor down
+
+        Returns
+        -------
+        Cursor position
+
         """
         if(self.__current_position < len(self.__functions) - 1):
             self.__current_position += 1
@@ -53,13 +79,13 @@ class Menu:
                 self.__scroll_detect -= 1
                 self.__start_draw_from += 1
         
+        return self.__current_position
     
     def update_screen(self):
         """
         Draw the menu to the screen
         """
         
-        #TODO: change print() function to the
         
         last_draw = self.__start_draw_from + self.__max_lines
         it = 0
