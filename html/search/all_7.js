@@ -6,5 +6,7 @@ var searchData=
   ['glcd_79',['Glcd',['../classst7565_1_1Glcd.html',1,'st7565']]],
   ['global_5fvariable_80',['global_variable',['../namespaceglobal__variable.html',1,'']]],
   ['global_5fvariable_2epy_81',['global_variable.py',['../global__variable_8py.html',1,'']]],
-  ['green_82',['green',['../classst7565_1_1Glcd.html#ad83fb941855ba7c4aa2bb65245437777',1,'st7565::Glcd']]]
+  ['global_5fvariable_5ftest_82',['global_variable_test',['../namespaceglobal__variable__test.html',1,'']]],
+  ['global_5fvariable_5ftest_2epy_83',['global_variable_test.py',['../global__variable__test_8py.html',1,'']]],
+  ['green_84',['green',['../classst7565_1_1Glcd.html#ad83fb941855ba7c4aa2bb65245437777',1,'st7565::Glcd']]]
 ];

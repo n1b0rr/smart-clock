@@ -1,13 +1,13 @@
 # IDE
 	- vim
 	- gedit
+	- vscode
 
 # interpreter 
 	- python 3.x
 # tools
 	- wsl
 	- linux
-	- cmake
 	- ssh
 # libraries
 	- bcm2835-1.71 (spi, I/O)
@@ -25,5 +25,7 @@
 	- st7565 (display spi)
 	- busio (display i2c)
 	- board SCL SDA (display i2c)
+	- doxygen
+	- unittest
 
 
