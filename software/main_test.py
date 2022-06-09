@@ -34,16 +34,43 @@ class TestRemoveToDo(unittest.TestCase):
     
 class TestMenu(unittest.TestCase):
     def test_add_function(self):
-        pass
+        myMenu = Menu(5)
+        myMenu.add_function("f1", None)
+        myMenu.add_function("f2", None)
+        myMenu.add_function("f3", None)
+        self.assertEqual(3, myMenu.size())
+        
     
     def test_delete_function(self):
-        pass
+        myMenu = Menu(5)
+        myMenu.add_function("f1", None)
+        myMenu.add_function("f2", None)
+        myMenu.add_function("f3", None)
+        
+        myMenu.delete_function("f1")
+        myMenu.delete_function("f2")
+        myMenu.delete_function("f3")
+        self.assertEqual(0, myMenu.size())
     
-    def test_up(self):
-        pass
-
-    def test_down(self):
-        pass
+    def test_up_down(self):
+        myMenu = Menu(5)
+        myMenu.add_function("f1", None)
+        myMenu.add_function("f2", None)
+        myMenu.add_function("f3", None)
+        
+        self.assertEqual(myMenu.get_cursor(), 0)
+        myMenu.up()
+        self.assertEqual(myMenu.get_cursor(), 0)
+        myMenu.down()
+        self.assertEqual(myMenu.get_cursor(), 1)
+        myMenu.down()
+        self.assertEqual(myMenu.get_cursor(), 2)
+        myMenu.down()
+        self.assertEqual(myMenu.get_cursor(), 2)
+        myMenu.up()
+        myMenu.up()
+        self.assertEqual(myMenu.get_cursor(), 0)
+        
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,7 +1,7 @@
 try:
-	from i2cDisplay import *
+    from i2cDisplay import *
 except:
-	from spiDisplay import *
+    from spiDisplay import *
 
 from datetime import datetime
 
@@ -14,7 +14,7 @@ def clock():
     None.
 
     """
-    
+
     now = datetime.now()
     time = now.strftime("%H:%M:%S")
     write(7, 2, time)

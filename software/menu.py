@@ -1,7 +1,7 @@
 try:
-	from i2cDisplay import *
+    from i2cDisplay import *
 except:
-	from spiDisplay import *
+    from spiDisplay import *
 
 class Menu:
 
@@ -85,7 +85,7 @@ class Menu:
         """
         Draw the menu to the screen
         """
-        
+        #thread block!
         
         last_draw = self.__start_draw_from + self.__max_lines
         it = 0
@@ -109,3 +109,26 @@ class Menu:
         Execute current selected option        
         """
         list(self.__functions.values())[self.__current_position]()
+        
+    def size(self):
+        """
+        Gets amount of items inside menu
+
+        Returns
+        -------
+        integer
+
+        """
+        
+        return len(self.__functions.values())
+
+    def get_cursor(self):
+        """
+        Get the position of the cursor
+
+        Returns
+        -------
+        integer
+
+        """
+        return self.__current_position

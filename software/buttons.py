@@ -22,6 +22,7 @@ class Buttons:
         """
         Get the current status of the buttons
         """
+        #thread block!
         
         #debouncig delay
         time.sleep(0.001)    #sleep for 1ms

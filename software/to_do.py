@@ -62,7 +62,7 @@ def remove(x):
 
 def show_to_do_list():
     """
-    Initialize hardware and menu
+    function wrapper for render()
 
     Returns
     -------
@@ -79,7 +79,7 @@ def show_to_do_list():
 
 def menu_function(menu_object):
     """
-    Show the to do list.
+    to do list navigation
     
     Returns
     -------
@@ -121,6 +121,16 @@ def menu_function(menu_object):
             break
 
 def new_menu():
+    """
+    Create new menu object
+
+    Returns
+    -------
+    menu : Menu
+        New menu object
+
+    """
+    
     menu = Menu(5)
     for i in global_variable.to_do_list:
         menu.add_function(global_variable.to_do_list[i], None)

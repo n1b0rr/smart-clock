@@ -7,6 +7,14 @@ import global_variable
 import time
 
 def stopwatch():    
+    """
+    Stopwatch function
+
+    Returns
+    -------
+    None.
+
+    """
 
     buttons = global_variable.buttons
 

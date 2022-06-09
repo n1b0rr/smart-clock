@@ -7,6 +7,14 @@ import time
 import global_variable
 
 def timer_function():
+    """
+    Timer function
+
+    Returns
+    -------
+    None.
+
+    """
 
     timer = 0
     timer_active = False
